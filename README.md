@@ -1,23 +1,14 @@
-# Exercise: Accessibility Audit
+# Solution: Accessibility Audit
 
-## Goal
-Find and fix 8+ accessibility errors in a web page.
+This is the complete solution for the "A11y Audit" exercise.
 
-## Instructions
-1. Open `index.html`
-2. The page has intentional accessibility problems
-3. Find each issue (marked with comments) and fix it
-
-## Errors to find and fix
-1. Missing `lang` attribute on `<html>`
-2. Image without `alt` text
-3. `<div onclick>` used instead of `<button>`
-4. Form input without `<label>`
-5. `outline: none` removing focus indicator
-6. Low contrast text (light gray on white)
-7. Missing skip navigation link
-8. Non-descriptive link text ("click here")
-9. Missing heading hierarchy (h1 jumps to h4)
-
-## Validation
-Use a screen reader or browser accessibility tools to verify fixes.
+## What was fixed
+1. Added `lang="en"` to `<html>`
+2. Added descriptive `alt` text to images
+3. Replaced `<div onclick>` with `<button>`
+4. Added `<label>` for email input
+5. Replaced `outline: none` with a visible focus style
+6. Fixed low-contrast text (dark gray instead of light gray)
+7. Added skip navigation link
+8. Replaced "click here" with descriptive link text
+9. Fixed heading hierarchy (h4 -> h2)

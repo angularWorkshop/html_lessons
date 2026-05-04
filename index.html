@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<!-- BUG 1: Missing lang attribute -->
-<html>
+<!-- FIX 1: Added lang attribute -->
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Store</title>
   <style>
-    /* BUG 5: This removes the focus indicator — bad for keyboard users */
+    /* FIX 5: Replaced outline:none with a visible focus style */
     *:focus {
-      outline: none;
+      outline: 2px solid #1a73e8;
+      outline-offset: 2px;
     }
-    /* BUG 6: Low contrast — light gray text on white background */
+    /* FIX 6: Fixed contrast — dark text on white background */
     .description {
-      color: #ccc;
+      color: #444;
       background: #fff;
+    }
+    /* FIX 7: Style for skip link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #1a73e8;
+      color: #fff;
+      padding: 8px 16px;
+      z-index: 100;
+      text-decoration: none;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    .add-to-cart {
+      padding: 10px;
+      background: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: inherit;
     }
   </style>
 </head>
 <body>
 
-  <!-- BUG 7: No skip navigation link -->
+  <!-- FIX 7: Skip navigation link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header>
     <h1>My Online Store</h1>
@@ -32,34 +56,37 @@
     </nav>
   </header>
 
-  <main>
-    <!-- BUG 9: Skips from h1 to h4 — bad heading hierarchy -->
-    <h4>Featured Products</h4>
+  <main id="main-content">
+    <!-- FIX 9: Fixed heading hierarchy h4 -> h2 -->
+    <h2>Featured Products</h2>
 
     <div class="product">
-      <!-- BUG 2: Image has no alt attribute -->
-      <img src="https://picsum.photos/seed/product1/300/200">
+      <!-- FIX 2: Added descriptive alt text -->
+      <img src="https://picsum.photos/seed/product1/300/200" alt="Wireless Bluetooth headphones in black, displayed on a white surface">
       <p class="description">A wonderful product that you will love. High quality and affordable.</p>
 
-      <!-- BUG 3: div with onclick instead of a real button -->
-      <div onclick="addToCart(1)" style="cursor: pointer; padding: 10px; background: blue; color: white;">
+      <!-- FIX 3: Replaced div with button -->
+      <button class="add-to-cart" onclick="addToCart(1)">
         Add to Cart
-      </div>
+      </button>
     </div>
 
     <div class="product">
-      <img src="https://picsum.photos/seed/product2/300/200">
+      <!-- FIX 2: Added descriptive alt text -->
+      <img src="https://picsum.photos/seed/product2/300/200" alt="Stainless steel water bottle with bamboo cap">
       <p class="description">Another great product for your everyday needs.</p>
 
-      <!-- BUG 8: Non-descriptive link text -->
-      <p>To learn more about this product, <a href="/product/2">click here</a>.</p>
+      <!-- FIX 8: Descriptive link text instead of "click here" -->
+      <p><a href="/product/2">View details for stainless steel water bottle</a></p>
     </div>
 
-    <h4>Newsletter Signup</h4>
+    <!-- FIX 9: h4 -> h2 -->
+    <h2>Newsletter Signup</h2>
 
-    <!-- BUG 4: Input without a label -->
+    <!-- FIX 4: Added label for email input -->
     <form action="/subscribe" method="post">
-      <input type="email" name="email" placeholder="Enter your email">
+      <label for="subscribe-email">Email address</label>
+      <input type="email" id="subscribe-email" name="email" placeholder="Enter your email">
       <button type="submit">Subscribe</button>
     </form>
 
