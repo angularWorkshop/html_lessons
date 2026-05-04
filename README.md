@@ -1,10 +1,7 @@
-# Exercise: Grid Mosaic Gallery
-
-## Goal
-Create a mosaic image gallery using CSS Grid with span for featured images.
+# Solution: Grid Mosaic Gallery
 
 ## Checklist
-- [ ] Grid layout with gap
-- [ ] Feature image spans 2 columns or rows
-- [ ] `object-fit: cover` on images
-- [ ] Responsive gap
+- [x] Grid layout with gap
+- [x] Feature image spans 2 columns and rows
+- [x] `object-fit: cover` on images
+- [x] Responsive gap
