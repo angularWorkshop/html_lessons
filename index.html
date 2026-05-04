@@ -3,10 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Basic CSS Selectors</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <header>
+    <h1>CSS Selectors Practice</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a creative agency specializing in web design and development.</p>
+      <p class="highlight">Our mission is to build beautiful, accessible websites for everyone.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Web Design</li>
+        <li>Frontend Development</li>
+        <li>UX Research</li>
+        <li>Brand Identity</li>
+      </ul>
+      <p>Each service is tailored to your specific needs.</p>
+    </section>
+
+    <section id="team">
+      <h2>Meet the Team</h2>
+      <div class="card">
+        <h3>Alice Johnson</h3>
+        <p>Lead Designer with 10 years of experience.</p>
+      </div>
+      <div class="card">
+        <h3>Bob Smith</h3>
+        <p>Senior Developer and accessibility advocate.</p>
+      </div>
+      <div class="card">
+        <h3>Carol Lee</h3>
+        <p>UX Researcher passionate about user-centered design.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Creative Agency. All rights reserved.</p>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+  </footer>
 </body>
 </html>

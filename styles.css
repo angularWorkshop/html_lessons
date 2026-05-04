@@ -1,0 +1,45 @@
+/* === Basic CSS Selectors Exercise === */
+
+/* TODO 1: Universal selector — reset margin and padding to 0, set box-sizing to border-box */
+
+
+/* TODO 2: Tag selector — style <body>: font-family system-ui, line-height 1.6, color #333 */
+
+
+/* TODO 3: Grouping selector — style h1, h2, h3 together: font-family Georgia, serif; color #1a1a2e */
+
+
+/* TODO 4: Tag selector — style <h1>: font-size 2.5rem, text-align center */
+
+
+/* TODO 5: Tag selector — style <h2>: font-size 1.8rem, border-bottom 2px solid #e0e0e0, padding-bottom 0.5rem */
+
+
+/* TODO 6: Tag selector — style <p>: max-width 65ch, margin-bottom 1rem */
+
+
+/* TODO 7: Class selector — style .highlight: background-color #fff3cd, padding 1rem, border-left 4px solid #ffc107 */
+
+
+/* TODO 8: Class selector — style .card: padding 1.5rem, border 1px solid #ddd, border-radius 8px, margin-bottom 1rem */
+
+
+/* TODO 9: Tag selector — style <header>: background-color #1a1a2e, color white, padding 1rem 2rem */
+
+
+/* TODO 10: Descendant selector — style nav a: color white, text-decoration none, padding 0.5rem 1rem */
+
+
+/* TODO 11: Tag selector — style <ul>: padding-left 2rem */
+
+
+/* TODO 12: Tag selector — style <li>: margin-bottom 0.5rem */
+
+
+/* TODO 13: Tag selector — style <a>: color #0066cc */
+
+
+/* TODO 14: Tag selector — style <footer>: background-color #1a1a2e, color white, padding 1.5rem, text-align center, margin-top 3rem */
+
+
+/* TODO 15: Descendant selector — style footer a: color #aaccff */

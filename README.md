@@ -1,17 +1,21 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Basic CSS Selectors
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Learn to select HTML elements using tag selectors, class selectors, the universal selector, and grouping selectors.
 
-## Structure
+## Instructions
+1. Open `index.html` — it contains a page with 20+ elements (headings, paragraphs, lists, links, a form, etc.)
+2. Open `styles.css` — it is linked but empty, with TODO comments
+3. Complete each TODO to style the page using the specified selector type
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] Universal selector `*` resets margin/padding and sets box-sizing
+- [ ] Tag selectors style `body`, `h1`, `h2`, `h3`, `p`, `a`, `ul`, `li`
+- [ ] Class selector `.highlight` adds a background color
+- [ ] Class selector `.card` adds padding, border, and border-radius
+- [ ] Grouping selector `h1, h2, h3` sets a shared font-family
+- [ ] Tag selector for `header` and `footer` adds background color
+- [ ] `nav a` selector removes underline and adds padding
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Open `index.html` in a browser and verify all elements are visually styled.
