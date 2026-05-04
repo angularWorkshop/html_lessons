@@ -1,17 +1,17 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Restaurant Menu
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Structure a restaurant menu using ordered, unordered, and description lists.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. Convert the plain text menu into proper HTML lists
+3. Follow the TODO comments
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] `<ul>` for menu categories with nested `<ul>` for dishes
+- [ ] `<ol>` for a numbered recipe
+- [ ] `<dl>` with `<dt>`/`<dd>` for allergen legend
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+The menu should show bullet points, the recipe should be numbered, and allergens should display as a definition list.
