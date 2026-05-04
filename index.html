@@ -3,10 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>CSS Themes</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch" class="theme-toggle__input">
+    <label for="theme-switch" class="theme-toggle__label">Dark Mode</label>
+  </div>
+  <div class="container">
+    <header><h1>Themed Page</h1></header>
+    <main>
+      <div class="card"><h2>Card Title</h2><p>This card adapts to the selected theme using CSS custom properties.</p></div>
+      <div class="card"><h2>Another Card</h2><p>Toggle dark mode to see all colors change via CSS variables.</p></div>
+    </main>
+  </div>
 </body>
 </html>
