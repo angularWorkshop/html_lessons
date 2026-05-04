@@ -1,12 +1,9 @@
-# Exercise: Product Landing Page
-
-## Goal
-Build a complete product landing page combining Flexbox and Grid layouts.
+# Solution: Product Landing Page
 
 ## Checklist
-- [ ] Hero section with flex centering
-- [ ] Features: 3-column grid layout
-- [ ] Testimonial cards with flex
-- [ ] Styled form/CTA section
-- [ ] Footer with grid columns
-- [ ] Google Font imported
+- [x] Hero section with flex centering
+- [x] Features: 3-column grid
+- [x] Testimonial cards with flex
+- [x] Styled form/CTA
+- [x] Footer with grid
+- [x] Google Font (Inter)
