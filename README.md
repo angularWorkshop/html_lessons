@@ -1,17 +1,8 @@
-# Exercise: Restaurant Menu
+# Solution: Restaurant Menu
 
-## Goal
-Structure a restaurant menu using ordered, unordered, and description lists.
+This is the complete solution for the "Restaurant Menu" exercise.
 
-## Instructions
-1. Open `index.html`
-2. Convert the plain text menu into proper HTML lists
-3. Follow the TODO comments
-
-## Checklist
-- [ ] `<ul>` for menu categories with nested `<ul>` for dishes
-- [ ] `<ol>` for a numbered recipe
-- [ ] `<dl>` with `<dt>`/`<dd>` for allergen legend
-
-## Validation
-The menu should show bullet points, the recipe should be numbered, and allergens should display as a definition list.
+## What was done
+- Nested `<ul>` for menu categories and dishes
+- `<ol>` for numbered recipe steps
+- `<dl>`/`<dt>`/`<dd>` for allergen guide
