@@ -1,10 +1,7 @@
-# Exercise: Fluid Typography
-
-## Goal
-Replace fixed px font sizes with fluid typography using clamp(), min(), and rem units.
+# Solution: Fluid Typography
 
 ## Checklist
-- [ ] `clamp()` on h1 for fluid heading size
-- [ ] `min()` on container width
-- [ ] All font sizes in `rem` (no px for text)
-- [ ] Fluid scaling between breakpoints
+- [x] `clamp()` on h1 for fluid heading size
+- [x] `min()` on container width
+- [x] All font sizes in `rem`
+- [x] Fluid scaling between breakpoints
