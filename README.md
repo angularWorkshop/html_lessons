@@ -1,17 +1,12 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Gradient Cards
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Create four visually distinct cards using CSS gradients, HSL colors, and currentColor.
 
-## Structure
-
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
-
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Checklist
+- [ ] Card 1: `linear-gradient` from top-left (two HSL colors)
+- [ ] Card 2: `radial-gradient` (circle at center, HSL colors)
+- [ ] Card 3: Gradient layered over a placeholder background image
+- [ ] Card 4: Semi-transparent `hsla` background with backdrop effect
+- [ ] All colors use HSL/HSLA notation
+- [ ] `currentColor` used for card borders
