@@ -1,9 +1,6 @@
-# Exercise: Grid Auto-Fill Cards
-
-## Goal
-Create a responsive card grid using `repeat(auto-fill, minmax())` without media queries.
+# Solution: Grid Auto-Fill Cards
 
 ## Checklist
-- [ ] `repeat(auto-fill, minmax(280px, 1fr))` for responsive columns
-- [ ] `grid-auto-rows` for consistent row height
-- [ ] `aspect-ratio` on card images
+- [x] `repeat(auto-fill, minmax(280px, 1fr))`
+- [x] `grid-auto-rows` for consistent rows
+- [x] `aspect-ratio` on card images
