@@ -1,17 +1,18 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Meta Tags
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Enrich an HTML page's `<head>` with essential meta tags for SEO, social sharing, and browser behavior.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. The page already has a basic structure with only `charset`
+3. Follow the TODO comments to add the missing meta tags
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] `<meta name="description">` for search engines
+- [ ] Open Graph tags: `og:title`, `og:description`, `og:image`, `og:url`
+- [ ] Favicon `<link>`
+- [ ] `<meta name="theme-color">` for mobile browsers
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+View page source in browser — all meta tags should be present in `<head>`.
