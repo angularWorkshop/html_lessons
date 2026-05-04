@@ -1,17 +1,18 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Feedback Form
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Build a feedback form with select dropdowns, textareas, checkboxes, and proper fieldset grouping.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. Complete the form by adding the specified controls
+3. Group related fields with `<fieldset>` and `<legend>`
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] `<select>` with `<optgroup>` for categorized options
+- [ ] `<textarea>` for free-text feedback
+- [ ] Checkbox for terms agreement
+- [ ] `<fieldset>` + `<legend>` grouping related fields
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Select should show grouped options. Textarea should be resizable. Checkbox should be clickable via label.

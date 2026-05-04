@@ -3,10 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Feedback Form</title>
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <h1>Send Us Feedback</h1>
+
+  <form action="/feedback" method="post">
+
+    <!-- TODO 1: Add <fieldset> with <legend>About You</legend> containing:
+         - Label + text input for "Your Name" (id="name", name="name")
+         - Label + email input for "Email" (id="email", name="email")
+    -->
+
+    <!-- TODO 2: Add <fieldset> with <legend>Your Feedback</legend> containing: -->
+
+      <!-- TODO 2a: Label + <select> for "Department" (id="department", name="department")
+           Use <optgroup> to group:
+           Group "Technical":
+             - Website (value="website")
+             - Mobile App (value="mobile")
+             - API (value="api")
+           Group "Business":
+             - Sales (value="sales")
+             - Billing (value="billing")
+             - Partnerships (value="partnerships")
+      -->
+
+      <!-- TODO 2b: Label + <textarea> for "Your Message"
+           id="message", name="message", rows="6", cols="50"
+           placeholder="Tell us what you think..."
+      -->
+
+    <!-- TODO 3: Add a checkbox with label:
+         <input type="checkbox" id="agree" name="agree" value="yes">
+         <label for="agree">I agree to the privacy policy</label>
+    -->
+
+    <button type="submit">Send Feedback</button>
+
+  </form>
 </body>
 </html>
