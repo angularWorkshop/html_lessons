@@ -1,17 +1,18 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Photo Gallery
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Create a photo gallery with properly marked-up images using `<figure>`, `<figcaption>`, alt text, and performance attributes.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. Six images are included as bare `<img>` tags
+3. Enhance each with proper attributes and wrap in `<figure>`
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] Each image wrapped in `<figure>` + `<figcaption>`
+- [ ] Descriptive `alt` text on every `<img>`
+- [ ] `width` and `height` attributes to prevent layout shift
+- [ ] `loading="lazy"` on images below the fold (images 3-6)
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Images should display with captions. Check the HTML source — all attributes should be present.
