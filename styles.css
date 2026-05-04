@@ -1,47 +1,62 @@
-/* === Article Typography Exercise === */
+/* === Article Typography — Solution === */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* TODO 1: Style body — system font stack, line-height 1.6, color #333, background #fafafa */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fafafa;
+}
 
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
-/* TODO 2: Style .container — max-width 720px, margin 0 auto, padding 2rem */
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.2;
+}
 
+h1 { font-size: 2.75rem; margin-bottom: 0.5rem; }
 
-/* TODO 3: Style h1, h2, h3 — font-family "Playfair Display", Georgia, serif; line-height 1.2 */
+.meta { font-size: 0.875rem; color: #888; margin-bottom: 2rem; }
 
+.lead { font-size: 1.25rem; color: #555; margin-bottom: 2rem; line-height: 1.7; }
 
-/* TODO 4: Style h1 — font-size 2.75rem, margin-bottom 0.5rem */
+h2 { font-size: 2rem; margin-top: 2.5rem; margin-bottom: 1rem; }
 
+h3 { font-size: 1.5rem; margin-top: 1.5rem; margin-bottom: 0.75rem; }
 
-/* TODO 5: Style .meta — font-size 0.875rem, color #888, margin-bottom 2rem */
+p { margin-bottom: 1rem; max-width: 65ch; }
 
+blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #555;
+}
 
-/* TODO 6: Style .lead — font-size 1.25rem, color #555, margin-bottom 2rem, line-height 1.7 */
+cite { display: block; margin-top: 0.5rem; font-size: 0.875rem; font-style: normal; }
 
+ul { padding-left: 2rem; margin-bottom: 1.5rem; }
 
-/* TODO 7: Style h2 — font-size 2rem, margin-top 2.5rem, margin-bottom 1rem */
+li { margin-bottom: 0.5rem; }
 
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
 
-/* TODO 8: Style h3 — font-size 1.5rem, margin-top 1.5rem, margin-bottom 0.75rem */
-
-
-/* TODO 9: Style p — margin-bottom 1rem, max-width 65ch */
-
-
-/* TODO 10: Style blockquote — border-left 4px solid #ccc, padding-left 1.5rem, margin 2rem 0, font-style italic, color #555 */
-
-
-/* TODO 11: Style cite — display block, margin-top 0.5rem, font-size 0.875rem, font-style normal */
-
-
-/* TODO 12: Style ul — padding-left 2rem, margin-bottom 1.5rem */
-
-
-/* TODO 13: Style li — margin-bottom 0.5rem */
-
-
-/* TODO 14: Style .truncate — white-space nowrap, overflow hidden, text-overflow ellipsis, max-width 100% */
-
-
-/* TODO 15: Style article footer — margin-top 3rem, padding-top 1rem, border-top 1px solid #ddd, font-size 0.875rem, color #888 */
+article footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.875rem;
+  color: #888;
+}
