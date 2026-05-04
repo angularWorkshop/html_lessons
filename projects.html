@@ -7,22 +7,58 @@
 </head>
 <body>
 
-  <!-- TODO 1: Add skip link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- TODO 2: Same <header> + <nav> as index.html,
-       but aria-current="page" goes on "Projects" link -->
+  <header>
+    <h1>Anna Smith</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- TODO 3: Create <main id="main"> with:
-       - <h2>My Projects</h2>
-       - 3x <article> "project cards", each containing:
-         * <h3> project name
-         * <figure> with <img> (picsum.photos with different seeds),
-           alt text, width/height, loading="lazy", <figcaption>
-         * <p> project description
-         * <a href="#"> "View Project" link
-  -->
+  <main id="main">
 
-  <!-- TODO 4: Same <footer> as index.html -->
+    <h2>My Projects</h2>
+
+    <article>
+      <h3>Weather Dashboard</h3>
+      <figure>
+        <img src="https://picsum.photos/seed/weather/400/250" alt="Screenshot of a weather dashboard showing temperature charts and forecasts" width="400" height="250" loading="lazy">
+        <figcaption>Weather Dashboard — real-time forecasts</figcaption>
+      </figure>
+      <p>A responsive weather application that displays current conditions and 5-day forecasts using the OpenWeather API. Built with vanilla JavaScript and CSS Grid.</p>
+      <a href="#">View Project</a>
+    </article>
+
+    <article>
+      <h3>Recipe Finder</h3>
+      <figure>
+        <img src="https://picsum.photos/seed/recipe/400/250" alt="Screenshot of a recipe search app showing recipe cards with food photos" width="400" height="250" loading="lazy">
+        <figcaption>Recipe Finder — search thousands of recipes</figcaption>
+      </figure>
+      <p>A recipe search application that helps users find meals based on available ingredients. Features include filtering by diet, cuisine, and prep time.</p>
+      <a href="#">View Project</a>
+    </article>
+
+    <article>
+      <h3>Task Manager</h3>
+      <figure>
+        <img src="https://picsum.photos/seed/tasks/400/250" alt="Screenshot of a kanban-style task board with columns for To Do, In Progress, and Done" width="400" height="250" loading="lazy">
+        <figcaption>Task Manager — organize your workflow</figcaption>
+      </figure>
+      <p>A drag-and-drop task management app with kanban boards. Supports labels, due dates, and team collaboration. Accessible keyboard navigation included.</p>
+      <a href="#">View Project</a>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Anna Smith. <a href="mailto:anna@example.com">anna@example.com</a></p>
+  </footer>
 
 </body>
 </html>

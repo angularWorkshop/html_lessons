@@ -7,28 +7,47 @@
 </head>
 <body>
 
-  <!-- TODO 1: Add a skip navigation link: <a href="#main" class="skip-link">Skip to main content</a> -->
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- TODO 2: Create a <header> with:
-       - <h1>Anna Smith</h1>
-       - <nav aria-label="Main navigation"> with <ul> of links:
-         * Home (index.html) — aria-current="page"
-         * Projects (projects.html)
-         * Contact (contacts.html)
-  -->
+  <header>
+    <h1>Anna Smith</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- TODO 3: Create <main id="main"> with:
-       - <section> "About Me":
-         * <h2>About Me</h2>
-         * <figure> with <img> (use https://picsum.photos/seed/portrait/300/300)
-           alt text, width/height, <figcaption>
-         * <p> with a short bio (2-3 sentences about being a web developer)
-       - <section> "Skills":
-         * <h2>Skills</h2>
-         * <ul> with at least 5 skills
-  -->
+  <main id="main">
 
-  <!-- TODO 4: Create <footer> with copyright and a mailto link -->
+    <section>
+      <h2>About Me</h2>
+      <figure>
+        <img src="https://picsum.photos/seed/portrait/300/300" alt="Portrait photo of Anna Smith smiling" width="300" height="300">
+        <figcaption>Anna Smith — Front-End Developer</figcaption>
+      </figure>
+      <p>I am a front-end developer with a passion for creating accessible, performant web experiences. I have been building websites for over five years, working with startups and agencies alike. When I am not coding, I enjoy hiking and contributing to open-source projects.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5 &amp; Semantic Markup</li>
+        <li>CSS3, Flexbox &amp; Grid</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Web Accessibility (WCAG 2.1)</li>
+        <li>Responsive Design</li>
+        <li>Git &amp; Version Control</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Anna Smith. <a href="mailto:anna@example.com">anna@example.com</a></p>
+  </footer>
 
 </body>
 </html>

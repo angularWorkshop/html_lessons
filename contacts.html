@@ -7,25 +7,66 @@
 </head>
 <body>
 
-  <!-- TODO 1: Add skip link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- TODO 2: Same <header> + <nav> as index.html,
-       but aria-current="page" goes on "Contact" link -->
+  <header>
+    <h1>Anna Smith</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contacts.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- TODO 3: Create <main id="main"> with:
-       - <h2>Get in Touch</h2>
-       - <form action="/contact" method="post"> with:
-         * <fieldset> + <legend>Contact Information</legend>
-         * Labeled inputs: name (required), email (required, type=email),
-           subject (required)
-         * <label> + <textarea> for message (required, minlength=20)
-         * <button type="submit">Send Message</button>
-       - <section> "Other Ways to Reach Me":
-         * <h2>Other Ways to Reach Me</h2>
-         * <ul> with mailto link, tel link, external link to GitHub/LinkedIn
-  -->
+  <main id="main">
 
-  <!-- TODO 4: Same <footer> as index.html -->
+    <h2>Get in Touch</h2>
+
+    <form action="/contact" method="post">
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <p>
+          <label for="contact-name">Full Name</label><br>
+          <input type="text" id="contact-name" name="name" required>
+        </p>
+
+        <p>
+          <label for="contact-email">Email Address</label><br>
+          <input type="email" id="contact-email" name="email" required>
+        </p>
+
+        <p>
+          <label for="contact-subject">Subject</label><br>
+          <input type="text" id="contact-subject" name="subject" required>
+        </p>
+
+        <p>
+          <label for="contact-message">Message</label><br>
+          <textarea id="contact-message" name="message" rows="6" cols="50" required minlength="20" placeholder="Your message (at least 20 characters)"></textarea>
+        </p>
+      </fieldset>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <section>
+      <h2>Other Ways to Reach Me</h2>
+      <ul>
+        <li><a href="mailto:anna@example.com">anna@example.com</a></li>
+        <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+        <li><a href="https://github.com/annasmith" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/annasmith" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Anna Smith. <a href="mailto:anna@example.com">anna@example.com</a></p>
+  </footer>
 
 </body>
 </html>
