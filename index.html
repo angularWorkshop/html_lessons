@@ -8,34 +8,69 @@
 <body>
   <h1>Customer Survey</h1>
 
-  <!-- TODO 1: Add a <progress> element showing survey is 50% complete
-       value="50" max="100", with label "Survey progress: 50%" -->
+  <p>
+    <label for="survey-progress">Survey progress: 50%</label><br>
+    <progress id="survey-progress" value="50" max="100">50%</progress>
+  </p>
 
   <form action="/survey" method="post">
 
-    <!-- TODO 2: Create a <fieldset> with <legend>How did you hear about us?</legend>
-         Add radio buttons (name="source"):
-         - Search Engine (value="search")
-         - Social Media (value="social")
-         - Friend Referral (value="friend")
-         - Advertisement (value="ad")
-         Each radio needs an id and a <label for="..."> -->
+    <fieldset>
+      <legend>How did you hear about us?</legend>
+      <p>
+        <input type="radio" id="source-search" name="source" value="search">
+        <label for="source-search">Search Engine</label>
+      </p>
+      <p>
+        <input type="radio" id="source-social" name="source" value="social">
+        <label for="source-social">Social Media</label>
+      </p>
+      <p>
+        <input type="radio" id="source-friend" name="source" value="friend">
+        <label for="source-friend">Friend Referral</label>
+      </p>
+      <p>
+        <input type="radio" id="source-ad" name="source" value="ad">
+        <label for="source-ad">Advertisement</label>
+      </p>
+    </fieldset>
 
-    <!-- TODO 3: Create a <fieldset> with <legend>Which products interest you? (select all)</legend>
-         Add checkboxes (name="products"):
-         - Electronics (value="electronics")
-         - Clothing (value="clothing")
-         - Books (value="books")
-         - Home & Garden (value="home")
-         Each checkbox needs an id and a <label for="..."> -->
+    <fieldset>
+      <legend>Which products interest you? (select all)</legend>
+      <p>
+        <input type="checkbox" id="prod-electronics" name="products" value="electronics">
+        <label for="prod-electronics">Electronics</label>
+      </p>
+      <p>
+        <input type="checkbox" id="prod-clothing" name="products" value="clothing">
+        <label for="prod-clothing">Clothing</label>
+      </p>
+      <p>
+        <input type="checkbox" id="prod-books" name="products" value="books">
+        <label for="prod-books">Books</label>
+      </p>
+      <p>
+        <input type="checkbox" id="prod-home" name="products" value="home">
+        <label for="prod-home">Home &amp; Garden</label>
+      </p>
+    </fieldset>
 
-    <!-- TODO 4: Add a text input with a <datalist> for "Favorite brand"
-         <input type="text" id="brand" name="brand" list="brands">
-         <datalist id="brands"> with options: Apple, Samsung, Sony, Nike, Adidas -->
+    <p>
+      <label for="brand">Favorite brand</label><br>
+      <input type="text" id="brand" name="brand" list="brands">
+      <datalist id="brands">
+        <option value="Apple">
+        <option value="Samsung">
+        <option value="Sony">
+        <option value="Nike">
+        <option value="Adidas">
+      </datalist>
+    </p>
 
-    <!-- TODO 5: Add a <meter> element for satisfaction score
-         <label for="satisfaction">Current satisfaction score:</label>
-         <meter id="satisfaction" value="7" min="0" max="10" low="3" high="7" optimum="9">7 out of 10</meter> -->
+    <p>
+      <label for="satisfaction">Current satisfaction score:</label><br>
+      <meter id="satisfaction" value="7" min="0" max="10" low="3" high="7" optimum="9">7 out of 10</meter>
+    </p>
 
     <button type="submit">Submit Survey</button>
 
