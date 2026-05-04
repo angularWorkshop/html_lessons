@@ -1,24 +1,25 @@
-/* === Responsive Nav Exercise === */
+/* === Responsive Nav — Solution === */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: system-ui, sans-serif; }
 main { padding: 2rem; }
 
-/* TODO 1: Mobile base styles for .nav — background #1a1a2e, padding 1rem */
+.nav { background: #1a1a2e; padding: 1rem; }
+.nav__logo { color: white; font-size: 1.5rem; font-weight: 700; text-decoration: none; display: block; margin-bottom: 1rem; }
+.nav__links { list-style: none; }
+.nav__links li { margin-bottom: 0.5rem; }
+.nav__links a { color: rgba(255,255,255,0.8); text-decoration: none; display: block; padding: 0.5rem 0; }
+.nav__links a:hover { color: white; }
+.nav__cta { display: none; }
 
-/* TODO 2: .nav__logo — color white, font-size 1.5rem, font-weight 700, text-decoration none, display block, margin-bottom 1rem */
+@media (min-width: 768px) {
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; }
+  .nav__logo { margin-bottom: 0; }
+  .nav__links { display: flex; gap: 1rem; }
+  .nav__links li { margin-bottom: 0; }
+  .nav__links a { display: inline; padding: 0.5rem; }
+}
 
-/* TODO 3: .nav__links — list-style none */
-
-/* TODO 4: .nav__links li — margin-bottom 0.5rem */
-
-/* TODO 5: .nav__links a — color rgba(255,255,255,0.8), text-decoration none, display block, padding 0.5rem 0 */
-
-/* TODO 6: .nav__cta — display none (hidden on mobile) */
-
-/* TODO 7: @media (min-width: 768px) — .nav becomes flex row with space-between and align-items center.
-   .nav__logo margin-bottom 0.
-   .nav__links becomes flex row with gap 1rem.
-   .nav__links li margin-bottom 0.
-   .nav__links a display inline, padding 0.5rem */
-
-/* TODO 8: @media (min-width: 1024px) — .nav__cta becomes display inline-block with padding 0.5rem 1.5rem, background #0066cc, color white, border none, border-radius 6px, cursor pointer */
+@media (min-width: 1024px) {
+  .nav__cta { display: inline-block; padding: 0.5rem 1.5rem; background: #0066cc; color: white; border: none; border-radius: 6px; cursor: pointer; }
+  .nav__cta:hover { background: #0052a3; }
+}
