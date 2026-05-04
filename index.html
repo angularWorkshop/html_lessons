@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- BUG 1: Missing lang attribute -->
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>My Store</title>
+  <style>
+    /* BUG 5: This removes the focus indicator — bad for keyboard users */
+    *:focus {
+      outline: none;
+    }
+    /* BUG 6: Low contrast — light gray text on white background */
+    .description {
+      color: #ccc;
+      background: #fff;
+    }
+  </style>
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+
+  <!-- BUG 7: No skip navigation link -->
+
+  <header>
+    <h1>My Online Store</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BUG 9: Skips from h1 to h4 — bad heading hierarchy -->
+    <h4>Featured Products</h4>
+
+    <div class="product">
+      <!-- BUG 2: Image has no alt attribute -->
+      <img src="https://picsum.photos/seed/product1/300/200">
+      <p class="description">A wonderful product that you will love. High quality and affordable.</p>
+
+      <!-- BUG 3: div with onclick instead of a real button -->
+      <div onclick="addToCart(1)" style="cursor: pointer; padding: 10px; background: blue; color: white;">
+        Add to Cart
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://picsum.photos/seed/product2/300/200">
+      <p class="description">Another great product for your everyday needs.</p>
+
+      <!-- BUG 8: Non-descriptive link text -->
+      <p>To learn more about this product, <a href="/product/2">click here</a>.</p>
+    </div>
+
+    <h4>Newsletter Signup</h4>
+
+    <!-- BUG 4: Input without a label -->
+    <form action="/subscribe" method="post">
+      <input type="email" name="email" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My Online Store</p>
+  </footer>
+
 </body>
 </html>
