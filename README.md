@@ -1,10 +1,7 @@
-# Exercise: Flex Cards with Wrap
-
-## Goal
-Create a responsive card layout using Flexbox with wrapping.
+# Solution: Flex Cards with Wrap
 
 ## Checklist
-- [ ] Flex container with `flex-wrap: wrap`
-- [ ] Cards ~30% width with gap
-- [ ] Equal height cards
-- [ ] Responsive layout
+- [x] Flex container with `flex-wrap: wrap`
+- [x] Cards ~30% width with gap
+- [x] Equal height cards
+- [x] Responsive layout
