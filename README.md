@@ -1,10 +1,7 @@
-# Exercise: CSS Custom Properties & Themes
-
-## Goal
-Create a theme system using CSS custom properties with light/dark mode toggle.
+# Solution: CSS Custom Properties & Themes
 
 ## Checklist
-- [ ] `:root` variables for colors, spacing
-- [ ] `[data-theme="dark"]` overrides
-- [ ] Checkbox toggle via `:checked` ~ selector
-- [ ] `prefers-color-scheme` media query
+- [x] :root variables for colors and spacing
+- [x] Dark theme overrides
+- [x] Checkbox toggle via :has(:checked)
+- [x] prefers-color-scheme media query

@@ -1,27 +1,47 @@
-/* === CSS Themes Exercise === */
+/* === CSS Themes — Solution === */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* TODO 1: :root — define custom properties:
-   --color-bg: #ffffff, --color-text: #333333, --color-primary: #0066cc,
-   --color-surface: #f5f5f5, --color-border: #e0e0e0, --spacing: 1.5rem */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #333333;
+  --color-primary: #0066cc;
+  --color-surface: #f5f5f5;
+  --color-border: #e0e0e0;
+  --spacing: 1.5rem;
+}
 
-/* TODO 2: [data-theme="dark"] or use :has() on body — override:
-   --color-bg: #1a1a2e, --color-text: #e0e0e0, --color-primary: #4da6ff,
-   --color-surface: #16213e, --color-border: #333 */
+body:has(.theme-toggle__input:checked) {
+  --color-bg: #1a1a2e;
+  --color-text: #e0e0e0;
+  --color-primary: #4da6ff;
+  --color-surface: #16213e;
+  --color-border: #333;
+}
 
-/* TODO 3: body — use variables: background var(--color-bg), color var(--color-text), font-family system-ui, transition background-color 0.3s, color 0.3s */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+.container { max-width: 800px; margin: 0 auto; padding: var(--spacing); }
+.card {
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  padding: var(--spacing); border-radius: 12px; margin-bottom: var(--spacing);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.card h2 { color: var(--color-primary); margin-bottom: 0.5rem; }
 
-/* TODO 4: .container — max-width 800px, margin 0 auto, padding var(--spacing) */
+.theme-toggle { padding: 1rem; text-align: right; }
+.theme-toggle__input { display: none; }
+.theme-toggle__label {
+  cursor: pointer; padding: 0.5rem 1rem;
+  background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 6px;
+}
 
-/* TODO 5: .card — background var(--color-surface), border 1px solid var(--color-border), padding var(--spacing), border-radius 12px, margin-bottom var(--spacing), transition background-color 0.3s, border-color 0.3s */
-
-/* TODO 6: .card h2 ��� color var(--color-primary), margin-bottom 0.5rem */
-
-/* TODO 7: .theme-toggle — padding 1rem, text-align right */
-/* TODO 8: .theme-toggle__input — display: none */
-/* TODO 9: .theme-toggle__label — cursor pointer, padding 0.5rem 1rem, background var(--color-surface), border 1px solid var(--color-border), border-radius 6px */
-
-/* TODO 10: Make the checkbox toggle work using :has() —
-   body:has(.theme-toggle__input:checked) { same as dark theme overrides } */
-
-/* TODO 11: @media (prefers-color-scheme: dark) — apply dark overrides to :root */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a1a2e; --color-text: #e0e0e0; --color-primary: #4da6ff;
+    --color-surface: #16213e; --color-border: #333;
+  }
+}
