@@ -1,0 +1,14 @@
+/* === Grid Auto-Fill Exercise === */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; padding: 2rem; background: #f5f5f5; }
+h1 { text-align: center; margin-bottom: 2rem; }
+
+/* TODO 1: .grid — display grid, grid-template-columns repeat(auto-fill, minmax(280px, 1fr)), gap 1.5rem, max-width 1200px, margin 0 auto */
+
+/* TODO 2: .card — background white, border-radius 12px, overflow hidden, box-shadow 0 2px 8px rgba(0,0,0,0.1) */
+
+/* TODO 3: .card img — width 100%, aspect-ratio 4/3, object-fit cover, display block */
+
+/* TODO 4: .card h2 — padding 1rem 1rem 0.25rem, font-size 1.1rem */
+
+/* TODO 5: .card p — padding 0 1rem 1rem, color #2d8f2d, font-weight 700, font-size 1.25rem */
