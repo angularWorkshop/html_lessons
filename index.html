@@ -7,18 +7,15 @@
 </head>
 <body>
 
-  <!-- TODO 1: Convert this into a proper <nav> element.
-       Add aria-label="Main navigation".
-       Convert the text items into <ul> > <li> > <a> structure.
-       The current page is "Home" — add aria-current="page" to that link. -->
-
-  <div>
-    Home
-    About
-    Projects
-    Blog
-    Contact
-  </div>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="/" aria-current="page">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
   <main>
     <h1>Welcome to My Website</h1>
