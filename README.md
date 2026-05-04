@@ -1,17 +1,18 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Media Page
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Embed video, audio, and iframe content using proper HTML5 media elements.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. Replace the placeholder divs with proper media elements
+3. Add accessibility and performance attributes
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] `<video>` with `controls`, `poster`, and fallback text
+- [ ] `<audio>` with `controls` and fallback text
+- [ ] `<iframe>` with `title`, `loading="lazy"`, and proper dimensions
+- [ ] All media wrapped in `<figure>` + `<figcaption>`
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Video and audio should have visible controls. The iframe should load content.
