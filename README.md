@@ -1,17 +1,18 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Your First HTML Page
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Create a complete, valid HTML5 page from scratch.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. Follow the TODO comments to build a proper HTML5 document
+3. The page should display your name as a heading and a short paragraph about yourself
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] DOCTYPE declaration
+- [ ] `<html>` element with `lang` attribute
+- [ ] `<head>` with charset meta, viewport meta, and title
+- [ ] `<body>` with an `<h1>` heading and a `<p>` paragraph
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Open the file in a browser — you should see a heading and a paragraph.
