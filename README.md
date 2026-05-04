@@ -1,17 +1,18 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Navigation Menu
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Build a proper navigation menu using semantic HTML and ARIA attributes.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. Convert the plain text navigation into a proper `<nav>` with a list of links
+3. Add ARIA attributes for accessibility
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] `<nav>` element with `aria-label="Main navigation"`
+- [ ] `<ul>` > `<li>` > `<a>` structure
+- [ ] `aria-current="page"` on the current page link
+- [ ] All links have proper `href` attributes
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+The navigation should render as a list of links. Screen readers should announce it as navigation.
