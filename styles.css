@@ -1,18 +1,21 @@
-/* === Grid Template Areas Exercise === */
+/* === Grid Template Areas — Solution === */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: system-ui, sans-serif; }
 
-/* TODO 1: .layout — display grid, min-height 100vh,
-   grid-template-areas: "header header" "sidebar content" "footer footer",
-   grid-template-columns 250px 1fr, grid-template-rows auto 1fr auto */
-
-/* TODO 2: .layout__header — grid-area header, background #1a1a2e, color white, padding 1rem 2rem */
-
-/* TODO 3: .layout__sidebar — grid-area sidebar, background #f0f0f0, padding 1.5rem */
-
-/* TODO 4: .layout__content — grid-area content, padding 2rem */
-
-/* TODO 5: .layout__footer — grid-area footer, background #1a1a2e, color white, padding 1rem 2rem, text-align center */
+.layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.layout__header { grid-area: header; background: #1a1a2e; color: white; padding: 1rem 2rem; }
+.layout__sidebar { grid-area: sidebar; background: #f0f0f0; padding: 1.5rem; }
+.layout__content { grid-area: content; padding: 2rem; }
+.layout__footer { grid-area: footer; background: #1a1a2e; color: white; padding: 1rem 2rem; text-align: center; }
 
 .layout__sidebar h2 { font-size: 1.1rem; margin-bottom: 1rem; }
 .layout__sidebar ul { list-style: none; }

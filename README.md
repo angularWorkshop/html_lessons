@@ -1,10 +1,7 @@
-# Exercise: Grid Template Areas
-
-## Goal
-Build a page layout using CSS Grid `grid-template-areas`.
+# Solution: Grid Template Areas
 
 ## Checklist
-- [ ] `display: grid` on container
-- [ ] `grid-template-areas` defining header, sidebar, content, footer
-- [ ] `grid-area` on each child
-- [ ] Sidebar 250px wide, content fills remaining
+- [x] `display: grid` on container
+- [x] `grid-template-areas` defining layout
+- [x] `grid-area` on each child
+- [x] Sidebar 250px, content fills remaining
