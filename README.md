@@ -1,19 +1,10 @@
-# Exercise: Order Form Validation
+# Solution: Order Form Validation
 
-## Goal
-Add client-side validation attributes to an order form without JavaScript.
+This is the complete solution for the "Order Validation" exercise.
 
-## Instructions
-1. Open `index.html`
-2. The form works but has no validation
-3. Add HTML5 validation attributes to enforce rules
-
-## Checklist
-- [ ] `required` on mandatory fields
-- [ ] `pattern` + `title` for postal code format
-- [ ] `min`/`max` for quantity
-- [ ] `minlength` for message field
-- [ ] `formnovalidate` on the "Save as Draft" button
-
-## Validation
-Try submitting with empty required fields — browser should show errors. The draft button should skip validation.
+## What was done
+- `required` on name, email, postal code, quantity
+- `pattern` + `title` on postal code
+- `min`/`max` on quantity
+- `minlength` on notes textarea
+- `formnovalidate` on the draft button
