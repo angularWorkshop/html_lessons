@@ -1,10 +1,7 @@
-# Exercise: CSS Loader Animations
-
-## Goal
-Create loading animations using @keyframes: spinner, pulse, and skeleton shimmer.
+# Solution: CSS Loader Animations
 
 ## Checklist
-- [ ] @keyframes spin — border spinner rotating 360deg
-- [ ] @keyframes pulse — scale + opacity breathing effect
-- [ ] @keyframes shimmer — gradient background-position slide
-- [ ] `prefers-reduced-motion` media query disabling animations
+- [x] @keyframes spin — border spinner
+- [x] @keyframes pulse — scale + opacity
+- [x] @keyframes shimmer — gradient background-position
+- [x] prefers-reduced-motion disables animations
