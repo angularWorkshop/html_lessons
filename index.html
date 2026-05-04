@@ -3,10 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Customer Survey</title>
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <h1>Customer Survey</h1>
+
+  <!-- TODO 1: Add a <progress> element showing survey is 50% complete
+       value="50" max="100", with label "Survey progress: 50%" -->
+
+  <form action="/survey" method="post">
+
+    <!-- TODO 2: Create a <fieldset> with <legend>How did you hear about us?</legend>
+         Add radio buttons (name="source"):
+         - Search Engine (value="search")
+         - Social Media (value="social")
+         - Friend Referral (value="friend")
+         - Advertisement (value="ad")
+         Each radio needs an id and a <label for="..."> -->
+
+    <!-- TODO 3: Create a <fieldset> with <legend>Which products interest you? (select all)</legend>
+         Add checkboxes (name="products"):
+         - Electronics (value="electronics")
+         - Clothing (value="clothing")
+         - Books (value="books")
+         - Home & Garden (value="home")
+         Each checkbox needs an id and a <label for="..."> -->
+
+    <!-- TODO 4: Add a text input with a <datalist> for "Favorite brand"
+         <input type="text" id="brand" name="brand" list="brands">
+         <datalist id="brands"> with options: Apple, Samsung, Sony, Nike, Adidas -->
+
+    <!-- TODO 5: Add a <meter> element for satisfaction score
+         <label for="satisfaction">Current satisfaction score:</label>
+         <meter id="satisfaction" value="7" min="0" max="10" low="3" high="7" optimum="9">7 out of 10</meter> -->
+
+    <button type="submit">Submit Survey</button>
+
+  </form>
 </body>
 </html>
