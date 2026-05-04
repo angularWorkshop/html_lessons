@@ -1,70 +1,76 @@
-/* === Cascade & Specificity Conflicts Exercise === */
+/* === Cascade & Specificity Conflicts — Solution === */
 
-/* CONFLICT 1: Which color does h1.title get? */
+/* CONFLICT 1: h1.title gets RED
+   h1           → 0-0-1
+   .title       → 0-1-0  ← WINS (class beats tag)
+   header h1    → 0-0-2 */
 h1 { color: blue; }
-.title { color: red; }
+.title { color: red; /* 0-1-0 — WINS */ }
 header h1 { color: green; }
-/* TODO: Which color wins? Calculate specificity for each rule and explain. */
 
-
-/* CONFLICT 2: Which color does #main-subtitle get? */
+/* CONFLICT 2: #main-subtitle gets TEAL
+   .subtitle     → 0-1-0
+   h2.subtitle   → 0-1-1
+   #main-subtitle → 1-0-0  ← WINS (ID beats class+tag) */
 .subtitle { color: orange; }
 h2.subtitle { color: purple; }
-#main-subtitle { color: teal; }
-/* TODO: Which color wins? Calculate specificity for each rule and explain. */
+#main-subtitle { color: teal; /* 1-0-0 — WINS */ }
 
-
-/* CONFLICT 3: Which color does p.intro.text get? */
+/* CONFLICT 3: p.intro.text gets DARKGREEN
+   .intro       → 0-1-0
+   .text        → 0-1-0
+   .intro.text  → 0-2-0  ← WINS (two classes beat one) */
 .intro { color: crimson; }
 .text { color: navy; }
-.intro.text { color: darkgreen; }
-/* TODO: Which color wins? Calculate specificity for each rule and explain. */
+.intro.text { color: darkgreen; /* 0-2-0 — WINS */ }
 
-
-/* CONFLICT 4: Which color does p#special.intro get? */
-#special { color: brown; }
+/* CONFLICT 4: p#special.intro gets BROWN
+   #special        → 1-0-0  ← WINS (ID always beats classes)
+   .content .intro → 0-2-0 */
+#special { color: brown; /* 1-0-0 — WINS */ }
 .content .intro { color: violet; }
-/* TODO: Which color wins? Calculate specificity for each rule and explain. */
 
-
-/* CONFLICT 5: Which color does .text.highlight get? */
+/* CONFLICT 5: .text.highlight gets DODGERBLUE
+   .highlight       → 0-1-0
+   .sidebar .text   → 0-2-0
+   .text.highlight  → 0-2-0  ← WINS (same specificity, later in source) */
 .highlight { color: tomato; }
 .sidebar .text { color: slategray; }
-.text.highlight { color: dodgerblue; }
-/* TODO: Which color wins? Calculate specificity for each rule and explain. */
+.text.highlight { color: dodgerblue; /* 0-2-0 — WINS (later in source) */ }
 
-
-/* CONFLICT 6: Which color does the inline-styled p get? */
+/* CONFLICT 6: Inline style GREEN wins
+   #article p → 1-0-1 — loses to inline
+   Inline styles have specificity 1-0-0-0 (inline layer beats everything except !important) */
 #article p { color: magenta; }
-/* The paragraph has style="color: green;" inline */
-/* TODO: Which color wins? Explain why inline styles beat selectors. */
 
-
-/* CONFLICT 7: Using !important */
-.site-footer .text { color: gray !important; }
+/* CONFLICT 7: !important GRAY wins
+   .site-footer .text → 0-2-0 + !important  ← WINS
+   #footer .text      → 1-1-0
+   !important overrides normal cascade regardless of specificity */
+.site-footer .text { color: gray !important; /* WINS — !important */ }
 #footer .text { color: gold; }
-/* TODO: Which color wins? Explain !important vs specificity. */
 
-
-/* CONFLICT 8: Source order — same specificity */
+/* CONFLICT 8: Source order — DARKBLUE wins
+   Both .content h2 → 0-1-1
+   Same specificity → last rule in source order wins */
 .content h2 { color: darkred; }
-.content h2 { color: darkblue; }
-/* TODO: Both have same specificity. Which wins and why? */
+.content h2 { color: darkblue; /* WINS — later in source */ }
 
-
-/* CONFLICT 9: Inheritance vs direct styling */
+/* CONFLICT 9: Inheritance vs direct — .text rule (NAVY) wins
+   .content sets color: olive — inherited by children
+   .text sets color: navy — directly applied to the element
+   Direct rules ALWAYS beat inherited values */
 .content { color: olive; }
-/* Does p.text inside .content inherit olive or keep navy from .text rule? */
-/* TODO: Explain inheritance vs direct rule. */
 
-
-/* CONFLICT 10: Universal selector specificity */
+/* CONFLICT 10: Universal vs tag
+   *    → 0-0-0 (direct on every element)
+   body → 0-0-1 (direct on body only, inherited for children)
+   For nested elements: * (0-0-0, direct) beats body (inherited).
+   But any class/tag selector beats * */
 * { color: black; }
 body { color: #333; }
-/* TODO: What specificity does * have? What about body? Explain. */
 
-
-/* Base layout (not part of exercise) */
+/* Base layout */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: system-ui, sans-serif; line-height: 1.6; padding: 2rem; }
 section, article { margin-bottom: 2rem; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; }
