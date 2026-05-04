@@ -3,10 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Holy Grail Layout</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <header class="header">
+    <h1>Holy Grail Layout</h1>
+  </header>
+  <div class="middle">
+    <aside class="sidebar sidebar--left">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+      <h2>Main Content</h2>
+      <p>This is the main content area. It should expand to fill the available space between the two sidebars.</p>
+      <p>The layout uses Flexbox to create the classic "Holy Grail" pattern: a header and footer spanning the full width, with a three-column middle section.</p>
+      <p>The content area grows to fill remaining space while sidebars maintain their fixed width.</p>
+    </main>
+    <aside class="sidebar sidebar--right">
+      <h2>Sidebar</h2>
+      <p>Related links, ads, or supplementary content goes here.</p>
+    </aside>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2024 Holy Grail Demo</p>
+  </footer>
 </body>
 </html>
