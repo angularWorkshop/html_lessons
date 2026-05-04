@@ -1,6 +1,6 @@
-/* === Advanced CSS Selectors Exercise === */
+/* === Advanced CSS Selectors — Solution === */
 
-/* Base styles (already done) */
+/* Base styles */
 * {
   margin: 0;
   padding: 0;
@@ -52,27 +52,58 @@ button {
   cursor: pointer;
 }
 
-/* === ADVANCED SELECTORS — Complete the TODOs below === */
+/* === ADVANCED SELECTORS — Solutions === */
 
-/* TODO 1: Adjacent sibling selector h2 + p — set font-size 1.1rem, color #555, font-style italic */
+/* Adjacent sibling: first paragraph after h2 */
+h2 + p {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+}
 
+/* Attribute: external links starting with http */
+[href^="http"] {
+  padding-right: 1rem;
+  color: #cc3300;
+}
 
-/* TODO 2: Attribute selector [href^="http"] — add padding-right 1rem, color #cc3300 */
+/* Attribute: PDF links */
+[href$=".pdf"] {
+  color: #cc0000;
+  font-weight: bold;
+}
 
+[href$=".pdf"]::after {
+  content: " [PDF]";
+  font-size: 0.8em;
+}
 
-/* TODO 3: Attribute selector [href$=".pdf"] — color #cc0000, font-weight bold */
+/* Attribute: required fields */
+[required] {
+  border-color: #0066cc;
+  border-width: 2px;
+}
 
+/* Child selector: direct ul inside nav */
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
 
-/* TODO 4: Attribute selector [required] — border-color #0066cc, border-width 2px */
+/* Pseudo-class: alternating section backgrounds */
+section:nth-child(even) {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
 
+/* Pseudo-class: first list item bold */
+li:first-child {
+  font-weight: bold;
+}
 
-/* TODO 5: Child selector nav > ul — list-style none, display flex, gap 1rem, padding 0 */
-
-
-/* TODO 6: Pseudo-class section:nth-child(even) — background-color #f5f5f5, border-radius 8px */
-
-
-/* TODO 7: Pseudo-class li:first-child — font-weight bold */
-
-
-/* TODO 8: Pseudo-class li:last-child — margin-bottom 0 */
+/* Pseudo-class: last list item */
+li:last-child {
+  margin-bottom: 0;
+}
