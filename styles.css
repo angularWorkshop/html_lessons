@@ -1,21 +1,19 @@
-/* === Holy Grail Layout Exercise === */
+/* === Holy Grail Layout �� Solution === */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* TODO 1: body — display flex, flex-direction column, min-height 100vh, font-family system-ui */
-
-/* TODO 2: .header — background #1a1a2e, color white, padding 1rem 2rem */
-
-/* TODO 3: .middle — display flex, flex 1 */
-
-/* TODO 4: .sidebar — flex 0 0 200px, padding 1.5rem, background #f0f0f0 */
-
-/* TODO 5: .sidebar--left — border-right 1px solid #ddd */
-
-/* TODO 6: .sidebar--right — border-left 1px solid #ddd */
-
-/* TODO 7: .content — flex 1, padding 2rem */
-
-/* TODO 8: .footer — background #1a1a2e, color white, padding 1rem 2rem, text-align center */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+}
+.header { background: #1a1a2e; color: white; padding: 1rem 2rem; }
+.middle { display: flex; flex: 1; }
+.sidebar { flex: 0 0 200px; padding: 1.5rem; background: #f0f0f0; }
+.sidebar--left { border-right: 1px solid #ddd; }
+.sidebar--right { border-left: 1px solid #ddd; }
+.content { flex: 1; padding: 2rem; }
+.footer { background: #1a1a2e; color: white; padding: 1rem 2rem; text-align: center; }
 
 .sidebar h2 { font-size: 1.1rem; margin-bottom: 1rem; }
 .sidebar ul { list-style: none; }
