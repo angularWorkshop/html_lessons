@@ -1,17 +1,19 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Schedule Table
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Build a structured HTML table for a weekly class schedule using proper table semantics.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. Convert the schedule data into a proper HTML table
+3. Use all the semantic table elements
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] `<table>` with `<caption>`
+- [ ] `<thead>`, `<tbody>`, `<tfoot>` sections
+- [ ] `<th scope="col">` for column headers, `<th scope="row">` for row headers
+- [ ] `colspan` for lunch break spanning all columns
+- [ ] `rowspan` for a class that runs two periods
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+The table should be readable and well-structured. Headers should be associated with data cells.

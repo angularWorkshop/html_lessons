@@ -3,10 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Weekly Schedule</title>
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <h1>Weekly Class Schedule</h1>
+
+  <!-- TODO: Create a <table> with the following structure:
+
+       Caption: "Fall 2024 — Weekly Class Schedule"
+
+       HEADER ROW (thead):
+       Time | Monday | Tuesday | Wednesday | Thursday | Friday
+
+       BODY ROWS (tbody):
+       09:00 | Math      | English   | Math      | English   | Math
+       10:00 | Physics   | History   | Physics   | History   | Art (rowspan="2" — Art runs 10:00-12:00 on Friday)
+       11:00 | Chemistry | Geography | Chemistry | Geography | (covered by Art rowspan)
+       12:00 | Lunch (colspan="5" — spans all day columns)
+       13:00 | PE        | Music     | PE        | Music     | Free Study
+
+       FOOTER (tfoot):
+       "Total: 22 class hours per week" spanning all 6 columns
+
+       Requirements:
+       - Use <th scope="col"> for day headers
+       - Use <th scope="row"> for time headers
+       - Use colspan="5" for Lunch
+       - Use rowspan="2" for Friday Art class
+       - Use colspan="6" for the footer
+  -->
+
+  Schedule data:
+  09:00 — Math, English, Math, English, Math
+  10:00 — Physics, History, Physics, History, Art (double period)
+  11:00 — Chemistry, Geography, Chemistry, Geography, (Art continues)
+  12:00 — Lunch break
+  13:00 — PE, Music, PE, Music, Free Study
+
+  Total: 22 class hours per week
+
 </body>
 </html>
