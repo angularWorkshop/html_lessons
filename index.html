@@ -3,10 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Pseudo-Elements</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <div class="container">
+    <h1>Pseudo-Elements & Pseudo-Classes</h1>
+    <section>
+      <h2>Custom List Markers</h2>
+      <ul class="custom-list">
+        <li>First item with custom marker</li>
+        <li>Second item with custom marker</li>
+        <li>Third item with custom marker</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Zebra Table</h2>
+      <table class="zebra-table">
+        <thead><tr><th>Name</th><th>Role</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Alice</td><td>Designer</td><td>Active</td></tr>
+          <tr><td>Bob</td><td>Developer</td><td>Active</td></tr>
+          <tr><td>Carol</td><td>PM</td><td>Away</td></tr>
+          <tr><td>Dave</td><td>QA</td><td>Active</td></tr>
+          <tr><td>Eve</td><td>DevOps</td><td>Active</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Styled Form</h2>
+      <form>
+        <input type="text" placeholder="Type your name here...">
+        <input type="email" placeholder="email@example.com">
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
 </body>
 </html>
