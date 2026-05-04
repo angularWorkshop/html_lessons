@@ -1,18 +1,9 @@
-# Exercise: Meta Tags
+# Solution: Meta Tags
 
-## Goal
-Enrich an HTML page's `<head>` with essential meta tags for SEO, social sharing, and browser behavior.
+This is the complete solution for the "Meta Tags" exercise.
 
-## Instructions
-1. Open `index.html`
-2. The page already has a basic structure with only `charset`
-3. Follow the TODO comments to add the missing meta tags
-
-## Checklist
-- [ ] `<meta name="description">` for search engines
-- [ ] Open Graph tags: `og:title`, `og:description`, `og:image`, `og:url`
-- [ ] Favicon `<link>`
-- [ ] `<meta name="theme-color">` for mobile browsers
-
-## Validation
-View page source in browser — all meta tags should be present in `<head>`.
+## What was done
+- Added meta description for SEO
+- Added Open Graph tags (title, description, image, url, type)
+- Added favicon link
+- Added theme-color meta tag for mobile browsers
