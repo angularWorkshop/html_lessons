@@ -1,17 +1,11 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Sticky Header & Modal
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Practice CSS positioning: sticky header, fixed back-to-top button, fixed+absolute modal, relative card with absolute badge, z-index scale.
 
-## Structure
-
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
-
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Checklist
+- [ ] Sticky header that stays at top on scroll
+- [ ] Fixed back-to-top button in bottom-right corner
+- [ ] Modal overlay (fixed) with centered dialog (absolute)
+- [ ] Card with relative position and absolute badge
+- [ ] z-index scale: header 100, modal 1000, back-to-top 50

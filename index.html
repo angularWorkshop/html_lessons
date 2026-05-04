@@ -3,10 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Sticky Header & Modal</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <header class="header">
+    <h1>My Website</h1>
+    <nav>
+      <a href="#section1">Section 1</a>
+      <a href="#section2">Section 2</a>
+      <a href="#section3">Section 3</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section1" class="section">
+      <div class="card">
+        <span class="card__badge">New</span>
+        <h2>Featured Product</h2>
+        <p>This card has a positioned badge in the corner.</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </section>
+
+    <section id="section2" class="section">
+      <h2>Section Two</h2>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+      <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+    </section>
+
+    <section id="section3" class="section">
+      <h2>Section Three</h2>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+      <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.</p>
+    </section>
+  </main>
+
+  <a href="#" class="back-to-top" aria-label="Back to top">&#8679;</a>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <h2>Subscribe to Newsletter</h2>
+      <p>Get the latest updates delivered to your inbox.</p>
+      <button class="modal__close">Close</button>
+    </div>
+  </div>
 </body>
 </html>
