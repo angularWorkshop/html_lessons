@@ -1,10 +1,7 @@
-# Exercise: Modern CSS Features
-
-## Goal
-Use modern CSS features: scroll-behavior, scroll-snap, :has(), and CSS nesting.
+# Solution: Modern CSS Features
 
 ## Checklist
-- [ ] `scroll-behavior: smooth` on html
-- [ ] `scroll-snap-type` on gallery container
-- [ ] `:has()` for conditional parent styling
-- [ ] CSS nesting on one component
+- [x] `scroll-behavior: smooth`
+- [x] `scroll-snap-type` on gallery
+- [x] `:has()` conditional parent styling
+- [x] CSS nesting on card component
