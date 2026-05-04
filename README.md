@@ -1,10 +1,7 @@
-# Exercise: BEM Refactor
-
-## Goal
-Refactor messy CSS class names into BEM (Block Element Modifier) naming convention.
+# Solution: BEM Refactor
 
 ## Checklist
-- [ ] Rename `.sidebar-title` to `.sidebar__title`
-- [ ] Rename `.btn-primary-lg` to `.btn--primary.btn--lg`
-- [ ] Flatten nested selectors to single-class selectors
-- [ ] Organize CSS into logical BEM sections
+- [x] Sidebar: `.sidebar__title`, `.sidebar__nav`, `.sidebar__item`, `.sidebar__link`
+- [x] Card: `.card--featured`, `.card__title`, `.card__text`
+- [x] Buttons: `.btn--primary`, `.btn--secondary`, `.btn--lg`, `.btn--sm`
+- [x] Flat selectors, no nesting

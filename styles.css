@@ -1,36 +1,31 @@
-/* === BEM Refactor Exercise === */
-/* This CSS uses messy, non-BEM naming. Refactor all class names to BEM. */
-/* Also update the HTML class names to match! */
-
+/* === BEM Refactor — Solution === */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: system-ui, sans-serif; }
 
-/* TODO: Refactor .page to use BEM. Currently uses deeply nested selectors. */
+/* ---- Page ---- */
 .page { display: flex; min-height: 100vh; }
 
-/* MESSY: nested selectors, unclear naming */
+/* ---- Sidebar Block ---- */
 .sidebar { width: 250px; background: #1a1a2e; color: white; padding: 1.5rem; }
-.sidebar .sidebar-title { font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 0.5rem; }
-.sidebar .sidebar-nav { list-style: none; }
-.sidebar .sidebar-nav .sidebar-nav-item { margin-bottom: 0.25rem; }
-.sidebar .sidebar-nav .sidebar-nav-item a { color: rgba(255,255,255,0.7); text-decoration: none; display: block; padding: 0.5rem; border-radius: 4px; }
-.sidebar .sidebar-nav .sidebar-nav-item.active a { background: rgba(255,255,255,0.1); color: white; }
+.sidebar__title { font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 0.5rem; }
+.sidebar__nav { list-style: none; }
+.sidebar__item { margin-bottom: 0.25rem; }
+.sidebar__link { color: rgba(255,255,255,0.7); text-decoration: none; display: block; padding: 0.5rem; border-radius: 4px; }
+.sidebar__item--active .sidebar__link { background: rgba(255,255,255,0.1); color: white; }
 
+/* ---- Content ---- */
 .content { flex: 1; padding: 2rem; display: flex; gap: 1.5rem; }
 
-/* MESSY: card styles with non-BEM naming */
+/* ---- Card Block ---- */
 .card { flex: 1; padding: 1.5rem; background: white; border: 1px solid #ddd; border-radius: 12px; }
-.card.featured { border-color: #0066cc; background: #f0f7ff; }
-.card .card-title { font-size: 1.25rem; margin-bottom: 0.75rem; }
-.card.featured .card-title { color: #0066cc; }
-.card .card-text { color: #666; line-height: 1.5; margin-bottom: 1rem; }
+.card--featured { border-color: #0066cc; background: #f0f7ff; }
+.card__title { font-size: 1.25rem; margin-bottom: 0.75rem; }
+.card--featured .card__title { color: #0066cc; }
+.card__text { color: #666; line-height: 1.5; margin-bottom: 1rem; }
 
-/* MESSY: button naming */
-.btn-primary-lg { padding: 0.75rem 1.5rem; background: #0066cc; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; }
-.btn-secondary-sm { padding: 0.5rem 1rem; background: #e0e0e0; color: #333; border: none; border-radius: 6px; font-size: 0.875rem; cursor: pointer; }
-
-/* TODO: Refactor ALL the above to proper BEM:
-   sidebar → .sidebar, .sidebar__title, .sidebar__nav, .sidebar__item, .sidebar__item--active, .sidebar__link
-   card → .card, .card--featured, .card__title, .card__text
-   btn → .btn, .btn--primary, .btn--secondary, .btn--lg, .btn--sm
-   Remove all nesting — use flat, single-class selectors */
+/* ---- Button Block ---- */
+.btn { border: none; border-radius: 8px; cursor: pointer; font-family: inherit; }
+.btn--primary { background: #0066cc; color: white; }
+.btn--secondary { background: #e0e0e0; color: #333; }
+.btn--lg { padding: 0.75rem 1.5rem; font-size: 1rem; }
+.btn--sm { padding: 0.5rem 1rem; font-size: 0.875rem; border-radius: 6px; }
