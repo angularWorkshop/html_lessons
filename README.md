@@ -1,11 +1,8 @@
-# Exercise: Pseudo-Elements & Pseudo-Classes
-
-## Goal
-Style decorative elements and states using pseudo-elements and pseudo-classes.
+# Solution: Pseudo-Elements & Pseudo-Classes
 
 ## Checklist
-- [ ] `li::before` custom list markers
-- [ ] `tr:nth-child(even)` zebra striping
-- [ ] `::placeholder` styled
-- [ ] `::selection` custom highlight
-- [ ] `:focus-visible` keyboard focus
+- [x] li::before custom markers
+- [x] tr:nth-child(even) zebra striping
+- [x] ::placeholder styled
+- [x] ::selection custom highlight
+- [x] :focus-visible keyboard focus
