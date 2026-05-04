@@ -10,34 +10,49 @@
 
   <form action="/feedback" method="post">
 
-    <!-- TODO 1: Add <fieldset> with <legend>About You</legend> containing:
-         - Label + text input for "Your Name" (id="name", name="name")
-         - Label + email input for "Email" (id="email", name="email")
-    -->
+    <fieldset>
+      <legend>About You</legend>
 
-    <!-- TODO 2: Add <fieldset> with <legend>Your Feedback</legend> containing: -->
+      <p>
+        <label for="name">Your Name</label><br>
+        <input type="text" id="name" name="name">
+      </p>
 
-      <!-- TODO 2a: Label + <select> for "Department" (id="department", name="department")
-           Use <optgroup> to group:
-           Group "Technical":
-             - Website (value="website")
-             - Mobile App (value="mobile")
-             - API (value="api")
-           Group "Business":
-             - Sales (value="sales")
-             - Billing (value="billing")
-             - Partnerships (value="partnerships")
-      -->
+      <p>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email">
+      </p>
+    </fieldset>
 
-      <!-- TODO 2b: Label + <textarea> for "Your Message"
-           id="message", name="message", rows="6", cols="50"
-           placeholder="Tell us what you think..."
-      -->
+    <fieldset>
+      <legend>Your Feedback</legend>
 
-    <!-- TODO 3: Add a checkbox with label:
-         <input type="checkbox" id="agree" name="agree" value="yes">
-         <label for="agree">I agree to the privacy policy</label>
-    -->
+      <p>
+        <label for="department">Department</label><br>
+        <select id="department" name="department">
+          <optgroup label="Technical">
+            <option value="website">Website</option>
+            <option value="mobile">Mobile App</option>
+            <option value="api">API</option>
+          </optgroup>
+          <optgroup label="Business">
+            <option value="sales">Sales</option>
+            <option value="billing">Billing</option>
+            <option value="partnerships">Partnerships</option>
+          </optgroup>
+        </select>
+      </p>
+
+      <p>
+        <label for="message">Your Message</label><br>
+        <textarea id="message" name="message" rows="6" cols="50" placeholder="Tell us what you think..."></textarea>
+      </p>
+    </fieldset>
+
+    <p>
+      <input type="checkbox" id="agree" name="agree" value="yes">
+      <label for="agree">I agree to the privacy policy</label>
+    </p>
 
     <button type="submit">Send Feedback</button>
 
