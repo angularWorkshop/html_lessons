@@ -3,10 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Product Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <section class="hero">
+    <h1>Build Better Products</h1>
+    <p>The all-in-one platform for modern teams to collaborate, ship, and grow.</p>
+    <button class="hero__cta">Get Started Free</button>
+  </section>
+  <section class="features">
+    <h2 class="section-title">Features</h2>
+    <div class="features__grid">
+      <div class="feature"><h3>Fast</h3><p>Lightning-fast performance with optimized infrastructure worldwide.</p></div>
+      <div class="feature"><h3>Secure</h3><p>Enterprise-grade security with end-to-end encryption and SOC2 compliance.</p></div>
+      <div class="feature"><h3>Scalable</h3><p>Grows with your team from startup to enterprise without breaking a sweat.</p></div>
+    </div>
+  </section>
+  <section class="testimonials">
+    <h2 class="section-title">What People Say</h2>
+    <div class="testimonials__cards">
+      <blockquote class="testimonial"><p>"This product changed how our team works together."</p><cite>-- Sarah, CTO at TechCo</cite></blockquote>
+      <blockquote class="testimonial"><p>"We shipped 3x faster after switching. Incredible tool."</p><cite>-- Mike, Lead Dev at StartupXYZ</cite></blockquote>
+    </div>
+  </section>
+  <section class="cta">
+    <h2>Ready to Start?</h2>
+    <form class="cta__form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+  <footer class="footer">
+    <div class="footer__grid">
+      <div><h3>Product</h3><ul><li><a href="#">Features</a></li><li><a href="#">Pricing</a></li></ul></div>
+      <div><h3>Company</h3><ul><li><a href="#">About</a></li><li><a href="#">Blog</a></li></ul></div>
+      <div><h3>Support</h3><ul><li><a href="#">Docs</a></li><li><a href="#">Contact</a></li></ul></div>
+    </div>
+    <p class="footer__copy">&copy; 2024 ProductName</p>
+  </footer>
 </body>
 </html>

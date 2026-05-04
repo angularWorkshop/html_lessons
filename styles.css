@@ -1,0 +1,31 @@
+/* === Product Landing Exercise === */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Inter", system-ui, sans-serif; color: #333; }
+.section-title { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+
+/* TODO 1: .hero — display flex, flex-direction column, align-items center, justify-content center, min-height 80vh, text-align center, padding 2rem, background linear-gradient(135deg, #667eea, #764ba2), color white */
+
+/* TODO 2: .hero h1 — font-size 3rem, margin-bottom 1rem */
+/* TODO 3: .hero p — font-size 1.25rem, max-width 600px, margin-bottom 2rem, opacity 0.9 */
+/* TODO 4: .hero__cta — padding 1rem 2.5rem, background white, color #764ba2, border none, border-radius 8px, font-size 1.1rem, font-weight 600, cursor pointer */
+
+/* TODO 5: .features — padding 4rem 2rem */
+/* TODO 6: .features__grid — display grid, grid-template-columns repeat(3, 1fr), gap 2rem, max-width 1000px, margin 0 auto */
+/* TODO 7: .feature — text-align center, padding 2rem, border-radius 12px, background #f8f9fa */
+/* TODO 8: .feature h3 — margin-bottom 0.75rem, color #764ba2 */
+
+/* TODO 9: .testimonials — padding 4rem 2rem, background #f8f9fa */
+/* TODO 10: .testimonials__cards — display flex, gap 2rem, max-width 800px, margin 0 auto */
+/* TODO 11: .testimonial — background white, padding 2rem, border-radius 12px, box-shadow 0 2px 8px rgba(0,0,0,0.08), flex 1 */
+/* TODO 12: .testimonial cite — display block, margin-top 1rem, font-size 0.875rem, color #888 */
+
+/* TODO 13: .cta — text-align center, padding 4rem 2rem */
+/* TODO 14: .cta__form — display flex, gap 0.5rem, max-width 400px, margin 1rem auto 0 */
+/* TODO 15: .cta__form input — flex 1, padding 0.75rem, border 1px solid #ddd, border-radius 8px */
+/* TODO 16: .cta__form button — padding 0.75rem 1.5rem, background #764ba2, color white, border none, border-radius 8px, cursor pointer */
+
+/* TODO 17: .footer — background #1a1a2e, color white, padding 3rem 2rem 1rem */
+/* TODO 18: .footer__grid — display grid, grid-template-columns repeat(3, 1fr), gap 2rem, max-width 800px, margin 0 auto 2rem */
+/* TODO 19: .footer ul — list-style none */
+/* TODO 20: .footer a — color rgba(255,255,255,0.7), text-decoration none */
+/* TODO 21: .footer__copy — text-align center, font-size 0.875rem, opacity 0.6 */
