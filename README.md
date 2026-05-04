@@ -1,10 +1,7 @@
-# Exercise: Form Focus Styles
-
-## Goal
-Add interactive focus and active states to form elements using transitions.
+# Solution: Form Focus Styles
 
 ## Checklist
-- [ ] Input focus: border-color change + box-shadow transition
-- [ ] Button active: `scale(0.98)` press effect
-- [ ] Custom outline styles using `:focus-visible`
-- [ ] Smooth transitions on all state changes
+- [x] Input focus: border-color + box-shadow transition
+- [x] Button active: scale(0.98)
+- [x] Custom :focus-visible outline
+- [x] Smooth transitions
