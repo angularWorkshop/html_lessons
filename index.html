@@ -3,10 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>BEM Refactor</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <div class="page">
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Navigation</h2>
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-item active"><a href="#">Dashboard</a></li>
+        <li class="sidebar-nav-item"><a href="#">Profile</a></li>
+        <li class="sidebar-nav-item"><a href="#">Settings</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+      <div class="card featured">
+        <h3 class="card-title">Featured Post</h3>
+        <p class="card-text">This card has a featured style variant.</p>
+        <button class="btn-primary-lg">Read More</button>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Regular Post</h3>
+        <p class="card-text">This is a standard card without modifiers.</p>
+        <button class="btn-secondary-sm">Read More</button>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

@@ -1,17 +1,10 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: BEM Refactor
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Refactor messy CSS class names into BEM (Block Element Modifier) naming convention.
 
-## Structure
-
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
-
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Checklist
+- [ ] Rename `.sidebar-title` to `.sidebar__title`
+- [ ] Rename `.btn-primary-lg` to `.btn--primary.btn--lg`
+- [ ] Flatten nested selectors to single-class selectors
+- [ ] Organize CSS into logical BEM sections
