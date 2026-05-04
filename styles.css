@@ -1,0 +1,78 @@
+/* === Advanced CSS Selectors Exercise === */
+
+/* Base styles (already done) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 2rem;
+}
+
+h1 { font-size: 2rem; margin-bottom: 1rem; }
+h2 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+p { margin-bottom: 1rem; }
+ul { padding-left: 2rem; margin-bottom: 1rem; }
+li { margin-bottom: 0.25rem; }
+
+section {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* === ADVANCED SELECTORS — Complete the TODOs below === */
+
+/* TODO 1: Adjacent sibling selector h2 + p — set font-size 1.1rem, color #555, font-style italic */
+
+
+/* TODO 2: Attribute selector [href^="http"] — add padding-right 1rem, color #cc3300 */
+
+
+/* TODO 3: Attribute selector [href$=".pdf"] — color #cc0000, font-weight bold */
+
+
+/* TODO 4: Attribute selector [required] — border-color #0066cc, border-width 2px */
+
+
+/* TODO 5: Child selector nav > ul — list-style none, display flex, gap 1rem, padding 0 */
+
+
+/* TODO 6: Pseudo-class section:nth-child(even) — background-color #f5f5f5, border-radius 8px */
+
+
+/* TODO 7: Pseudo-class li:first-child — font-weight bold */
+
+
+/* TODO 8: Pseudo-class li:last-child — margin-bottom 0 */

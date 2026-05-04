@@ -3,10 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Advanced CSS Selectors</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <header>
+    <h1>Advanced Selectors</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#form">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>This paragraph comes right after the h2 — it should be styled differently.</p>
+      <p>This is a regular paragraph, not immediately after the heading.</p>
+      <p>Another regular paragraph with more content about selectors.</p>
+    </section>
+
+    <section id="resources">
+      <h2>Useful Resources</h2>
+      <p>Check out these links for learning more about CSS.</p>
+      <ul>
+        <li><a href="/local-page">Local Page</a></li>
+        <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+        <li><a href="https://css-tricks.com">CSS-Tricks</a></li>
+        <li><a href="/files/guide.pdf">CSS Guide (PDF)</a></li>
+        <li><a href="/files/cheatsheet.pdf">Selector Cheatsheet (PDF)</a></li>
+        <li><a href="https://caniuse.com">Can I Use</a></li>
+      </ul>
+    </section>
+
+    <section id="form">
+      <h2>Sign Up</h2>
+      <p>Fill out the form below to join our newsletter.</p>
+      <form>
+        <div>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="phone">Phone (optional):</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+          <label for="website">Website (optional):</label>
+          <input type="url" id="website" name="website" placeholder="https://example.com">
+        </div>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Advanced Selectors Demo</p>
+  </footer>
 </body>
 </html>

@@ -1,17 +1,21 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Advanced CSS Selectors
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Practice combinator selectors, attribute selectors, and child selectors to target specific elements precisely.
 
-## Structure
+## Instructions
+1. Open `index.html` — the page has various elements including links, form fields, and nested lists
+2. Open `styles.css` — basic styles are done; advanced selectors have TODO comments
+3. Complete each TODO using the specified advanced selector
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] `h2 + p` adjacent sibling selector styles first paragraph after each h2
+- [ ] `[href^="http"]` attribute selector styles external links differently
+- [ ] `[required]` attribute selector highlights required form fields
+- [ ] `nav > ul` child selector targets only direct ul children of nav
+- [ ] `[href$=".pdf"]` attribute selector adds a PDF icon indicator
+- [ ] `:first-child` and `:last-child` pseudo-classes used
+- [ ] `section:nth-child(even)` alternates section backgrounds
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Open `index.html` in a browser. External links, required fields, and PDF links should be visually distinct.
