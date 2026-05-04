@@ -1,17 +1,21 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Article Typography
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Style a long-form article with proper typography: Google Fonts for headings, system font stack for body, rem-based sizes, proper line-height, text truncation, and a max-width container.
 
-## Structure
+## Instructions
+1. Open `index.html` — an article with headings, paragraphs, blockquote, and a list
+2. Open `styles.css` — minimal CSS with TODO comments for typography rules
+3. Complete each TODO to create beautiful, readable typography
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] Import a Google Font (Playfair Display) for headings
+- [ ] System font stack for body text
+- [ ] All font sizes in `rem` (no `px` for text)
+- [ ] `line-height: 1.6` for body, `1.2` for headings
+- [ ] Ellipsis truncation on `.truncate` element
+- [ ] `max-width` container for readable line lengths
+- [ ] Blockquote styled with left border and italic
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Article should be readable with clear visual hierarchy. No px units for font sizes.

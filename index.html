@@ -3,10 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Article Typography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <article class="container">
+    <header>
+      <h1>The Art of Web Typography</h1>
+      <p class="meta">Published on January 15, 2024 &middot; 8 min read</p>
+    </header>
+    <p class="lead">Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed.</p>
+    <h2>Why Typography Matters</h2>
+    <p>Good typography establishes a strong visual hierarchy, provides a graphic balance to the website, and sets the product's overall tone. Typography should guide and inform your users, optimize readability and accessibility, and ensure an excellent user experience.</p>
+    <p>When we talk about web typography, we refer to the practice of selecting and applying fonts, adjusting spacing, and creating layouts that enhance the reading experience on screen.</p>
+    <blockquote>
+      <p>"Typography is two-dimensional architecture, based on experience and imagination, and guided by rules and readability."</p>
+      <cite>— Hermann Zapf</cite>
+    </blockquote>
+    <h2>Key Principles</h2>
+    <h3>1. Visual Hierarchy</h3>
+    <p>Create clear distinctions between heading levels using size, weight, and spacing.</p>
+    <h3>2. Line Length</h3>
+    <p>The ideal line length for body text is 45-75 characters per line.</p>
+    <h3>3. Line Height</h3>
+    <p>Body text typically needs a line-height between 1.4 and 1.8.</p>
+    <h2>Font Pairing</h2>
+    <p>A classic pairing combines a serif font for headings with a sans-serif for body text.</p>
+    <ul>
+      <li>Playfair Display + System UI</li>
+      <li>Georgia + Helvetica</li>
+      <li>Merriweather + Open Sans</li>
+      <li>Lora + Roboto</li>
+    </ul>
+    <p class="truncate">This is a very long title that should be truncated with an ellipsis if it exceeds the available width of its container element because we want to demonstrate the CSS text-overflow property in a practical scenario.</p>
+    <footer>
+      <p>Tags: typography, design, css, web development</p>
+    </footer>
+  </article>
 </body>
 </html>
