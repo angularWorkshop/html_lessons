@@ -1,0 +1,97 @@
+/* === Responsive Dashboard Exercise === */
+
+/* TODO 1: :root — define CSS custom properties:
+   --color-bg, --color-surface, --color-text, --color-muted,
+   --color-primary, --color-border, --color-sidebar-bg, --color-sidebar-text,
+   --radius, --shadow */
+
+
+/* TODO 2: body:has(.theme-toggle__input:checked) — override all variables for dark theme */
+
+
+/* TODO 3: @media (prefers-color-scheme: dark) — set dark defaults */
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* TODO 4: body — background var(--color-bg), color var(--color-text), font-family system-ui, transition background-color 0.3s, color 0.3s */
+
+
+/* TODO 5: .skip-link — position absolute, top -40px, left 0, background var(--color-primary), color white, padding 0.5rem 1rem, z-index 1000.
+   .skip-link:focus — top 0 */
+
+
+/* TODO 6: .dashboard — display flex, min-height 100vh */
+
+
+/* TODO 7: .sidebar — width 240px, background var(--color-sidebar-bg), color var(--color-sidebar-text), display flex, flex-direction column, padding 1.5rem */
+
+
+/* TODO 8: .sidebar__logo — font-size 1.25rem, font-weight 700, margin-bottom 2rem, padding-bottom 1rem, border-bottom 1px solid rgba(255,255,255,0.1) */
+
+
+/* TODO 9: .sidebar__nav — display flex, flex-direction column, gap 0.25rem */
+
+
+/* TODO 10: .sidebar__link — color rgba(255,255,255,0.7), text-decoration none, padding 0.625rem 0.75rem, border-radius var(--radius), transition background 0.2s */
+/* TODO 11: .sidebar__link--active — background rgba(255,255,255,0.1), color white */
+
+
+/* TODO 12: .dashboard__main — flex 1, display flex, flex-direction column */
+
+
+/* TODO 13: .header — display flex, justify-content space-between, align-items center, padding 1rem 2rem, background var(--color-surface), border-bottom 1px solid var(--color-border) */
+
+
+/* TODO 14: .header__input — padding 0.5rem 1rem, border 1px solid var(--color-border), border-radius var(--radius), background var(--color-bg), color var(--color-text), width 300px */
+
+
+/* TODO 15: .header__actions — display flex, align-items center, gap 1rem */
+
+
+/* TODO 16: .content — padding 2rem, flex 1 */
+/* TODO 17: .content__title — font-size 1.75rem, margin-bottom 1.5rem */
+
+
+/* TODO 18: .kpi-grid — display grid, grid-template-columns repeat(auto-fill, minmax(200px, 1fr)), gap 1rem, margin-bottom 2rem */
+
+
+/* TODO 19: .kpi-card — background var(--color-surface), border 1px solid var(--color-border), border-radius var(--radius), padding 1.25rem, transition background-color 0.3s */
+
+
+/* TODO 20: .kpi-card__label — display block, font-size 0.8rem, color var(--color-muted), margin-bottom 0.25rem */
+/* TODO 21: .kpi-card__value — display block, font-size 1.75rem, font-weight 700 */
+/* TODO 22: .kpi-card__change — font-size 0.8rem */
+/* TODO 23: .kpi-card__change--up — color #16a34a */
+/* TODO 24: .kpi-card__change--down — color #dc2626 */
+
+
+/* TODO 25: .data-table — width 100%, border-collapse collapse */
+/* TODO 26: .data-table th, .data-table td — padding 0.75rem 1rem, text-align left, border-bottom 1px solid var(--color-border) */
+/* TODO 27: .data-table th — font-size 0.8rem, text-transform uppercase, color var(--color-muted) */
+/* TODO 28: .data-table tbody tr:nth-child(even) — background var(--color-surface) */
+/* TODO 29: .data-table tbody tr:hover — background rgba(0,102,204,0.05) */
+
+
+/* TODO 30: .badge — display inline-block, padding 0.2rem 0.6rem, border-radius 12px, font-size 0.75rem, font-weight 600 */
+/* TODO 31: .badge--success — background #dcfce7, color #16a34a */
+/* TODO 32: .badge--warning — background #fef9c3, color #ca8a04 */
+/* TODO 33: .badge--danger — background #fee2e2, color #dc2626 */
+
+
+/* TODO 34: @keyframes shimmer — skeleton loading animation */
+/* TODO 35: .skeleton styles with shimmer animation */
+/* TODO 36: .skeleton--image, --title, --text, --short variants */
+
+.skeleton-section { margin-top: 2rem; }
+.skeleton-section h2 { margin-bottom: 1rem; }
+
+
+/* TODO 37: .theme-toggle styles */
+/* TODO 38: .table-wrapper — overflow-x auto */
+/* TODO 39: .table-section__title — font-size 1.25rem, margin-bottom 1rem */
+
+
+/* TODO 40: @media (max-width: 768px) — sidebar hidden or collapsed, single column KPI grid */
+/* TODO 41: @media (max-width: 480px) — smaller padding, stack header */
+/* TODO 42: @media (prefers-reduced-motion: reduce) — disable animations */

@@ -3,10 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar__logo">Dashboard</div>
+      <nav class="sidebar__nav">
+        <a href="#" class="sidebar__link sidebar__link--active">Overview</a>
+        <a href="#" class="sidebar__link">Analytics</a>
+        <a href="#" class="sidebar__link">Customers</a>
+        <a href="#" class="sidebar__link">Products</a>
+        <a href="#" class="sidebar__link">Settings</a>
+      </nav>
+    </aside>
+
+    <div class="dashboard__main">
+      <header class="header">
+        <div class="header__search">
+          <input type="search" placeholder="Search..." class="header__input">
+        </div>
+        <div class="header__actions">
+          <label class="theme-toggle">
+            <input type="checkbox" class="theme-toggle__input" id="theme-switch">
+            <span class="theme-toggle__label">Dark</span>
+          </label>
+          <span class="header__user">Admin</span>
+        </div>
+      </header>
+
+      <main id="main" class="content">
+        <h1 class="content__title">Overview</h1>
+
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <span class="kpi-card__label">Revenue</span>
+            <span class="kpi-card__value">$48,200</span>
+            <span class="kpi-card__change kpi-card__change--up">+12%</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-card__label">Users</span>
+            <span class="kpi-card__value">2,340</span>
+            <span class="kpi-card__change kpi-card__change--up">+8%</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-card__label">Orders</span>
+            <span class="kpi-card__value">1,120</span>
+            <span class="kpi-card__change kpi-card__change--down">-3%</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-card__label">Conversion</span>
+            <span class="kpi-card__value">3.2%</span>
+            <span class="kpi-card__change kpi-card__change--up">+0.5%</span>
+          </div>
+        </div>
+
+        <section class="table-section">
+          <h2 class="table-section__title">Recent Orders</h2>
+          <div class="table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Customer</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>#1001</td><td>Alice Johnson</td><td>$120.00</td><td><span class="badge badge--success">Completed</span></td></tr>
+                <tr><td>#1002</td><td>Bob Smith</td><td>$85.50</td><td><span class="badge badge--warning">Pending</span></td></tr>
+                <tr><td>#1003</td><td>Carol Lee</td><td>$200.00</td><td><span class="badge badge--success">Completed</span></td></tr>
+                <tr><td>#1004</td><td>Dave Wilson</td><td>$45.00</td><td><span class="badge badge--danger">Cancelled</span></td></tr>
+                <tr><td>#1005</td><td>Eve Martinez</td><td>$300.00</td><td><span class="badge badge--success">Completed</span></td></tr>
+                <tr><td>#1006</td><td>Frank Brown</td><td>$175.00</td><td><span class="badge badge--warning">Pending</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="skeleton-section">
+          <h2>Loading Preview</h2>
+          <div class="skeleton-card">
+            <div class="skeleton skeleton--image"></div>
+            <div class="skeleton skeleton--title"></div>
+            <div class="skeleton skeleton--text"></div>
+            <div class="skeleton skeleton--text skeleton--short"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
 </body>
 </html>

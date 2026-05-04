@@ -1,17 +1,25 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Responsive Dashboard
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Build a complete responsive dashboard combining all CSS skills learned: layout, theming, animations, BEM, and accessibility.
 
-## Structure
+## Instructions
+1. Open `index.html` — a dashboard shell with sidebar, header, KPI cards, and a data table
+2. Open `styles.css` — TODO comments for each section
+3. Implement all CSS features from the course
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] Sidebar: flex-column layout
+- [ ] Header: flex layout with search and user area
+- [ ] KPI cards: grid with `auto-fill`
+- [ ] Data table: zebra striping with `:nth-child(even)`
+- [ ] CSS custom properties for theming
+- [ ] Dark mode toggle with `[data-theme="dark"]`
+- [ ] Skeleton loading animation with `@keyframes`
+- [ ] BEM naming throughout
+- [ ] 3 breakpoints (mobile, tablet, desktop)
+- [ ] Skip-link for accessibility
+- [ ] `prefers-reduced-motion` support
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Dashboard should be fully responsive, themed, and accessible.
