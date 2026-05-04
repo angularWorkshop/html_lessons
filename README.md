@@ -1,17 +1,19 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Cascade & Specificity Conflicts
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Understand how the CSS cascade resolves conflicting rules by analyzing specificity, source order, and inheritance.
 
-## Structure
+## Instructions
+1. Open `index.html` — it contains elements targeted by multiple conflicting CSS rules
+2. Open `styles.css` — it has 10 conflicting rules with comments asking "which color wins?"
+3. For each conflict, predict the winning rule, then add a comment explaining why
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] Predict the color of each heading and paragraph
+- [ ] Add specificity calculations as comments (e.g., `/* 0-1-1 */`)
+- [ ] Resolve conflicts by understanding specificity > source order
+- [ ] Identify which rules are overridden and why
+- [ ] Understand `!important` usage and its place in the cascade
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Open in browser and use DevTools to verify your predictions match actual computed styles.

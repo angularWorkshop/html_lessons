@@ -1,0 +1,72 @@
+/* === Cascade & Specificity Conflicts Exercise === */
+
+/* CONFLICT 1: Which color does h1.title get? */
+h1 { color: blue; }
+.title { color: red; }
+header h1 { color: green; }
+/* TODO: Which color wins? Calculate specificity for each rule and explain. */
+
+
+/* CONFLICT 2: Which color does #main-subtitle get? */
+.subtitle { color: orange; }
+h2.subtitle { color: purple; }
+#main-subtitle { color: teal; }
+/* TODO: Which color wins? Calculate specificity for each rule and explain. */
+
+
+/* CONFLICT 3: Which color does p.intro.text get? */
+.intro { color: crimson; }
+.text { color: navy; }
+.intro.text { color: darkgreen; }
+/* TODO: Which color wins? Calculate specificity for each rule and explain. */
+
+
+/* CONFLICT 4: Which color does p#special.intro get? */
+#special { color: brown; }
+.content .intro { color: violet; }
+/* TODO: Which color wins? Calculate specificity for each rule and explain. */
+
+
+/* CONFLICT 5: Which color does .text.highlight get? */
+.highlight { color: tomato; }
+.sidebar .text { color: slategray; }
+.text.highlight { color: dodgerblue; }
+/* TODO: Which color wins? Calculate specificity for each rule and explain. */
+
+
+/* CONFLICT 6: Which color does the inline-styled p get? */
+#article p { color: magenta; }
+/* The paragraph has style="color: green;" inline */
+/* TODO: Which color wins? Explain why inline styles beat selectors. */
+
+
+/* CONFLICT 7: Using !important */
+.site-footer .text { color: gray !important; }
+#footer .text { color: gold; }
+/* TODO: Which color wins? Explain !important vs specificity. */
+
+
+/* CONFLICT 8: Source order — same specificity */
+.content h2 { color: darkred; }
+.content h2 { color: darkblue; }
+/* TODO: Both have same specificity. Which wins and why? */
+
+
+/* CONFLICT 9: Inheritance vs direct styling */
+.content { color: olive; }
+/* Does p.text inside .content inherit olive or keep navy from .text rule? */
+/* TODO: Explain inheritance vs direct rule. */
+
+
+/* CONFLICT 10: Universal selector specificity */
+* { color: black; }
+body { color: #333; }
+/* TODO: What specificity does * have? What about body? Explain. */
+
+
+/* Base layout (not part of exercise) */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; line-height: 1.6; padding: 2rem; }
+section, article { margin-bottom: 2rem; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; }
+header { margin-bottom: 2rem; }
+footer { margin-top: 2rem; padding: 1rem; background: #f0f0f0; border-radius: 8px; }

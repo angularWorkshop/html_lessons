@@ -3,10 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Cascade Conflicts</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <header class="site-header" id="top">
+    <h1 class="title">Cascade & Specificity</h1>
+  </header>
+  <main>
+    <section class="content">
+      <h2 class="subtitle" id="main-subtitle">Conflict Resolution</h2>
+      <p class="intro text">This paragraph has two classes applied.</p>
+      <p id="special" class="intro">This paragraph has an ID and a class.</p>
+    </section>
+    <section class="content sidebar">
+      <h2>Sidebar Heading</h2>
+      <p class="text">Regular sidebar text.</p>
+      <p class="text highlight">Highlighted sidebar text.</p>
+    </section>
+    <article id="article" class="content">
+      <h2 class="subtitle">Article Heading</h2>
+      <p style="color: green;">Inline styled paragraph.</p>
+      <p class="text">Article body text.</p>
+    </article>
+  </main>
+  <footer id="footer" class="site-footer">
+    <p class="text">Footer text.</p>
+  </footer>
 </body>
 </html>
