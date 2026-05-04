@@ -1,17 +1,29 @@
-/* === Product Card (Box Model) Exercise === */
+/* === Product Card (Box Model) — Solution === */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: system-ui, sans-serif; background: #f5f5f5; padding: 3rem 1rem; }
 
-/* TODO 1: .product-card — width 300px, margin 0 auto, border 1px solid #ddd, border-radius 12px, overflow hidden, background white, box-shadow 0 2px 12px rgba(0,0,0,0.1) */
-
-/* TODO 2: .product-card__image — width 100%, display block */
-
-/* TODO 3: .product-card__body — padding 1.5rem */
-
-/* TODO 4: .product-card__title — font-size 1.25rem, margin-bottom 0.5rem */
-
-/* TODO 5: .product-card__description — color #666, font-size 0.9rem, line-height 1.5, margin-bottom 1rem */
-
-/* TODO 6: .product-card__price — font-size 1.5rem, font-weight 700, color #2d8f2d, margin-bottom 1rem */
-
-/* TODO 7: .product-card__button — width 100%, padding 0.75rem, background #0066cc, color white, border none, border-radius 8px, font-size 1rem, cursor pointer */
+.product-card {
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+.product-card__image { width: 100%; display: block; }
+.product-card__body { padding: 1.5rem; }
+.product-card__title { font-size: 1.25rem; margin-bottom: 0.5rem; }
+.product-card__description { color: #666; font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem; }
+.product-card__price { font-size: 1.5rem; font-weight: 700; color: #2d8f2d; margin-bottom: 1rem; }
+.product-card__button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.product-card__button:hover { background: #0052a3; }
