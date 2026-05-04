@@ -3,10 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Custom Forms</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <div class="container">
+    <h1>Custom Form Controls</h1>
+    <form>
+      <section>
+        <h2>Custom Checkboxes</h2>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input">
+          <span class="checkbox__box"></span>
+          <span class="checkbox__label">Accept terms and conditions</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input" checked>
+          <span class="checkbox__box"></span>
+          <span class="checkbox__label">Subscribe to newsletter</span>
+        </label>
+      </section>
+      <section>
+        <h2>Toggle Switch</h2>
+        <label class="toggle">
+          <input type="checkbox" class="toggle__input">
+          <span class="toggle__slider"></span>
+          <span class="toggle__label">Enable notifications</span>
+        </label>
+      </section>
+      <section>
+        <h2>File Upload</h2>
+        <div class="file-upload">
+          <input type="file" id="file" class="file-upload__input">
+          <label for="file" class="file-upload__label">Choose a file...</label>
+        </div>
+      </section>
+    </form>
+  </div>
 </body>
 </html>

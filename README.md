@@ -1,17 +1,10 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Custom Form Styling
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Override default browser form styles with custom CSS using `appearance: none`.
 
-## Structure
-
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
-
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Checklist
+- [ ] `appearance: none` on inputs
+- [ ] Custom checkbox with `::before` and `:checked`
+- [ ] Toggle switch using CSS only
+- [ ] Styled file input (hidden input + label)
