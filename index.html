@@ -3,10 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Grid Template Areas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <div class="layout">
+    <header class="layout__header"><h1>Grid Areas Layout</h1></header>
+    <aside class="layout__sidebar">
+      <h2>Sidebar</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Reports</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="layout__content">
+      <h2>Main Content</h2>
+      <p>This is the main content area built with CSS Grid template areas.</p>
+      <p>The layout is defined using named areas, making the CSS readable and easy to rearrange.</p>
+    </main>
+    <footer class="layout__footer"><p>&copy; 2024 Grid Areas Demo</p></footer>
+  </div>
 </body>
 </html>

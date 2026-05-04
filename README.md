@@ -1,17 +1,10 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Grid Template Areas
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Build a page layout using CSS Grid `grid-template-areas`.
 
-## Structure
-
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
-
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Checklist
+- [ ] `display: grid` on container
+- [ ] `grid-template-areas` defining header, sidebar, content, footer
+- [ ] `grid-area` on each child
+- [ ] Sidebar 250px wide, content fills remaining
