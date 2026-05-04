@@ -1,17 +1,12 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Product Card (Box Model)
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Build a product card demonstrating the CSS box model: width, padding, border, margin, border-radius, and box-shadow.
 
-## Structure
-
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
-
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Checklist
+- [ ] Card width: 300px with `box-sizing: border-box`
+- [ ] Center card with `margin: 0 auto`
+- [ ] Add padding inside the card body
+- [ ] Add border and `border-radius`
+- [ ] Add `box-shadow` for depth
+- [ ] Image fills card width
