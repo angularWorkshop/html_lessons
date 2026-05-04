@@ -1,17 +1,20 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Business Card
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Convert unstructured plain text into a properly marked-up HTML business card.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. The body contains raw text for a business card — name, title, contacts
+3. Wrap each piece of information in the correct semantic HTML tag
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] Name in `<h1>`
+- [ ] Job title in `<p>` with `<strong>` emphasis
+- [ ] `<hr>` separator between info and contacts
+- [ ] Email as `<a href="mailto:...">`
+- [ ] Phone as `<a href="tel:...">`
+- [ ] Company name wrapped in `<strong>`
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Links should be clickable in the browser. The card should have clear visual structure.
