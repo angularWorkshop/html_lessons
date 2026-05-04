@@ -1,17 +1,25 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: HTML Portfolio
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Build a multi-page portfolio website using everything learned in Topics 1-13. Three HTML files share a common navigation and use semantic, accessible markup throughout.
 
-## Structure
+## Instructions
+1. Three starter files are provided: `index.html`, `projects.html`, `contacts.html`
+2. Each has a navigation skeleton and TODO comments
+3. Complete all three pages
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Pages
+- **index.html** — Home/Bio: heading, photo, about-me paragraph, skills list
+- **projects.html** — Projects: project cards with images, descriptions, links
+- **contacts.html** — Contact: contact form with validation, social links
 
-## How to use
+## Checklist
+- [ ] Consistent `<header>` + `<nav>` across all 3 pages
+- [ ] `aria-current="page"` on the active page link
+- [ ] Semantic elements: header, nav, main, section, article, footer
+- [ ] Accessible images with alt text
+- [ ] Valid form with labels and validation
+- [ ] Skip navigation link on all pages
 
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+All three pages should be navigable, semantic, and accessible.
