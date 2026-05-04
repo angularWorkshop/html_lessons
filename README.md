@@ -1,17 +1,21 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Semantic Blog
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Replace generic `<div>` elements with semantic HTML5 elements to create a proper blog layout.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. The page is built entirely with `<div>` elements
+3. Replace each `<div>` with the correct semantic element
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] `<header>` for site header
+- [ ] `<nav>` for navigation
+- [ ] `<main>` for primary content
+- [ ] `<article>` for each blog post (x2)
+- [ ] `<aside>` for sidebar
+- [ ] `<footer>` for site footer
+- [ ] `<time datetime="...">` for dates
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+The page should look the same visually but use proper semantic elements in the source.
