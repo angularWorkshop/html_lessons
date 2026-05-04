@@ -1,17 +1,20 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Anchor Navigation
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Create a single-page document with internal anchor navigation, external links, and contact links.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. The page has 5 sections but no navigation
+3. Add a table of contents, anchor links, and other link types
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] Table of contents with anchor links to each section
+- [ ] Each section has a matching `id` attribute
+- [ ] "Back to top" links after each section
+- [ ] `mailto:` link for email
+- [ ] `tel:` link for phone
+- [ ] External link with `target="_blank"` and `rel="noopener noreferrer"`
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Click TOC links — they should scroll to the right section. "Back to top" should scroll up.
