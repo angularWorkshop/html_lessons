@@ -1,0 +1,16 @@
+/* === Flex Navbar Exercise === */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; }
+main { padding: 2rem; }
+
+/* TODO 1: .navbar — display flex, justify-content space-between, align-items center, padding 1rem 2rem, background #1a1a2e */
+
+/* TODO 2: .navbar__logo a — color white, text-decoration none, font-size 1.5rem, font-weight 700 */
+
+/* TODO 3: .navbar__links — display flex, gap 1.5rem */
+
+/* TODO 4: .navbar__links a — color rgba(255,255,255,0.8), text-decoration none, font-size 0.95rem, transition color 0.2s */
+
+/* TODO 5: .navbar__links a:hover — color white */
+
+/* TODO 6: .navbar__cta button — padding 0.5rem 1.5rem, background #0066cc, color white, border none, border-radius 6px, cursor pointer, font-size 0.95rem */
