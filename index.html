@@ -3,10 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Place an Order</title>
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <h1>Place an Order</h1>
+
+  <form action="/order" method="post">
+
+    <fieldset>
+      <legend>Delivery Details</legend>
+
+      <p>
+        <label for="full-name">Full Name</label><br>
+        <!-- TODO 1: Add "required" attribute -->
+        <input type="text" id="full-name" name="full_name">
+      </p>
+
+      <p>
+        <label for="email">Email</label><br>
+        <!-- TODO 2: Add "required" attribute -->
+        <input type="email" id="email" name="email">
+      </p>
+
+      <p>
+        <label for="postal-code">Postal Code</label><br>
+        <!-- TODO 3: Add required, pattern="[0-9]{5}" and title="Five digit postal code" -->
+        <input type="text" id="postal-code" name="postal_code">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Order Details</legend>
+
+      <p>
+        <label for="quantity">Quantity (1–99)</label><br>
+        <!-- TODO 4: Add required, min="1", max="99" -->
+        <input type="number" id="quantity" name="quantity">
+      </p>
+
+      <p>
+        <label for="notes">Special Instructions</label><br>
+        <!-- TODO 5: Add minlength="10" -->
+        <textarea id="notes" name="notes" rows="4" cols="40"></textarea>
+      </p>
+    </fieldset>
+
+    <!-- TODO 6: Add formnovalidate to the draft button -->
+    <button type="submit">Place Order</button>
+    <button type="submit" name="action" value="draft">Save as Draft</button>
+
+  </form>
 </body>
 </html>

@@ -1,17 +1,19 @@
-# HTML & CSS Bootcamp — Lessons
+# Exercise: Order Form Validation
 
-Practice exercises for the HTML & CSS course on [EduTec](https://edutec.work).
+## Goal
+Add client-side validation attributes to an order form without JavaScript.
 
-## Structure
+## Instructions
+1. Open `index.html`
+2. The form works but has no validation
+3. Add HTML5 validation attributes to enforce rules
 
-Each exercise lives in its own branch:
-- `lesson-topic-XX-exercise-YY-slug` — starter code with TODO comments
-- `answer-topic-XX-exercise-YY-slug` — complete solution
+## Checklist
+- [ ] `required` on mandatory fields
+- [ ] `pattern` + `title` for postal code format
+- [ ] `min`/`max` for quantity
+- [ ] `minlength` for message field
+- [ ] `formnovalidate` on the "Save as Draft" button
 
-## How to use
-
-1. Clone the repo
-2. Checkout the lesson branch: `git checkout lesson-topic-01-exercise-01-first-page`
-3. Open `index.html` in your browser
-4. Follow the instructions in `README.md`
-5. Check the answer branch when done
+## Validation
+Try submitting with empty required fields — browser should show errors. The draft button should skip validation.
