@@ -3,10 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML &amp; CSS Bootcamp</title>
+  <title>Fluid Typography</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML &amp; CSS Bootcamp</h1>
-  <p>Switch to a lesson branch to start an exercise.</p>
+  <article class="container">
+    <h1>Fluid Typography in Practice</h1>
+    <p class="lead">Modern CSS gives us tools to create typography that scales smoothly across all screen sizes without breakpoints.</p>
+    <h2>The Problem with Fixed Sizes</h2>
+    <p>Using px values for font sizes creates rigid text that doesn't adapt to different screens. A heading that looks great on desktop may be overwhelming on mobile, or too small to read on a large monitor.</p>
+    <h2>The clamp() Solution</h2>
+    <p>The clamp() function takes three values: a minimum, a preferred (fluid) value, and a maximum. The browser picks the best value within that range based on the viewport.</p>
+    <h3>Example Usage</h3>
+    <p>Instead of 48px for a heading, we write clamp(2rem, 5vw, 3.5rem). This means the heading will never be smaller than 2rem or larger than 3.5rem, but will scale fluidly between those limits.</p>
+  </article>
 </body>
 </html>
