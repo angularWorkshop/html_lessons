@@ -2,10 +2,14 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
+function stripCssComments(source) {
+  return source.replace(/\/\*[\s\S]*?\*\//g, '');
+}
+
 describe('Exercise 25.1 — Responsive Card Grid', () => {
   let css;
 
-  beforeAll(() => { css = readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8'); });
+  beforeAll(() => { css = stripCssComments(readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8')); });
 
   it('uses auto-fill or auto-fit', () => { expect(css).toMatch(/auto-(fill|fit)/); });
   it('uses minmax', () => { expect(css).toContain('minmax'); });
