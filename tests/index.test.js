@@ -2,10 +2,14 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
+function stripCssComments(source) {
+  return source.replace(/\/\*[\s\S]*?\*\//g, '');
+}
+
 describe('Exercise 22.1 — Flex Navbar', () => {
   let css;
 
-  beforeAll(() => { css = readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8'); });
+  beforeAll(() => { css = stripCssComments(readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8')); });
 
   it('uses display: flex', () => { expect(css).toContain('display: flex'); });
   it('uses justify-content', () => { expect(css).toContain('justify-content'); });
