@@ -2,10 +2,14 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
+function stripCssComments(source) {
+  return source.replace(/\/\*[\s\S]*?\*\//g, '');
+}
+
 describe('Exercise 32.1 — CSS Themes', () => {
   let css;
 
-  beforeAll(() => { css = readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8'); });
+  beforeAll(() => { css = stripCssComments(readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8')); });
 
   it('uses CSS custom properties (--var)', () => { expect(css).toMatch(/--[\w-]+:/); });
   it('uses var()', () => { expect(css).toContain('var(--'); });
