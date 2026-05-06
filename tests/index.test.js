@@ -2,10 +2,14 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
+function stripCssComments(source) {
+  return source.replace(/\/\*[\s\S]*?\*\//g, '');
+}
+
 describe('Exercise 19.1 — Product Card', () => {
   let css;
 
-  beforeAll(() => { css = readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8'); });
+  beforeAll(() => { css = stripCssComments(readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8')); });
 
   it('sets box-sizing border-box globally', () => { expect(css).toContain('border-box'); });
   it('card has fixed width', () => { expect(css).toMatch(/width:\s*300px/); });
