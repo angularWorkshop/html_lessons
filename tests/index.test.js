@@ -2,11 +2,15 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
+function stripCssComments(source) {
+  return source.replace(/\/\*[\s\S]*?\*\//g, '');
+}
+
 describe('Exercise 17.1 — Article Typography', () => {
   let css, html;
 
   beforeAll(() => {
-    css = readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8');
+    css = stripCssComments(readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8'));
     html = readFileSync(resolve(process.cwd(), 'index.html'), 'utf-8');
   });
 
