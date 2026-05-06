@@ -2,16 +2,38 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
-describe('Exercise 16.1 — Cascade Conflicts', () => {
+describe('Exercise 16.1 — Cascade & Specificity Conflicts', () => {
   let css;
 
-  beforeAll(() => { css = readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8'); });
+  beforeAll(() => {
+    css = readFileSync(resolve(process.cwd(), 'styles.css'), 'utf-8');
+  });
 
-  it('does not use !important', () => { expect(css).not.toContain('!important'); });
-  it('has specificity comments', () => { expect(css.toLowerCase()).toMatch(/specificit|специфичност/); });
-  it('has class selectors', () => { expect(css).toMatch(/\.[a-z]/i); });
-  it('resolves conflicts (has multiple rules for same elements)', () => {
-    const ruleCount = (css.match(/\{/g) || []).length;
-    expect(ruleCount).toBeGreaterThanOrEqual(8);
+  it('has no unfinished TODO prompts', () => {
+    expect(css).not.toMatch(/TODO:/i);
+  });
+
+  it('documents all ten conflicts', () => {
+    const conflicts = css.match(/CONFLICT\s+\d+/gi) || [];
+    expect(conflicts.length).toBeGreaterThanOrEqual(10);
+  });
+
+  it('explains winning rules instead of only leaving raw CSS', () => {
+    const wins = css.match(/wins?|WINS|побежда/i) || [];
+    expect(wins.length).toBeGreaterThan(0);
+    expect(css).toMatch(/class beats tag|ID beats|specificity|специфичн/i);
+  });
+
+  it('contains specificity calculations', () => {
+    const calculations = css.match(/\b\d-\d-\d\b/g) || [];
+    expect(calculations.length).toBeGreaterThanOrEqual(8);
+  });
+
+  it('covers source order, inline style, inheritance, universal selector, and important', () => {
+    expect(css).toMatch(/source order|later in source/i);
+    expect(css).toMatch(/inline/i);
+    expect(css).toMatch(/inherit/i);
+    expect(css).toMatch(/universal|\*/i);
+    expect(css).toMatch(/!important/i);
   });
 });
