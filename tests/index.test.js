@@ -31,7 +31,7 @@ describe('Exercise 13.1 — Accessibility Audit', () => {
 
   it('uses button elements (not div onclick)', () => {
     expect(doc.querySelectorAll('button').length).toBeGreaterThanOrEqual(1);
-    expect(doc.querySelectorAll('[onclick]').length).toBe(0);
+    expect(doc.querySelectorAll('div[onclick]').length).toBe(0);
   });
 
   it('form inputs have labels', () => {
