@@ -113,6 +113,26 @@ function scheduleChecks(reason) {
   }, 300);
 }
 
+// Keep a real HTTP server running so StackBlitz can attach its Preview pane.
+const vite = spawn('node', ['./node_modules/vite/bin/vite.js', '--host', '0.0.0.0'], {
+  stdio: ['ignore', 'pipe', 'pipe'],
+  env: { ...process.env },
+});
+
+vite.stdout.on('data', chunk => {
+  process.stdout.write(chunk);
+});
+
+vite.stderr.on('data', chunk => {
+  process.stderr.write(chunk);
+});
+
+vite.on('close', code => {
+  if (code) {
+    console.log(colorize('red', `Vite exited with code ${code}`));
+  }
+});
+
 for (const target of WATCH_TARGETS) {
   try {
     watch(target, () => {
