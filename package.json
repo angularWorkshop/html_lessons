@@ -1,4 +1,10 @@
 {
+  "name": "@angular-workshop/html-lessons",
+  "version": "0.1.0",
+  "private": true,
+  "stackblitz": {
+    "startCommand": "npm run start:dev"
+  },
   "scripts": {
     "start:dev": "node scripts/stackblitz-status.mjs",
     "dev": "vite --host 0.0.0.0",
@@ -6,11 +12,14 @@
     "test:watch": "vitest",
     "check": "npm run test"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
-    "vite": "latest"
+    "vite": "7.3.2"
   },
   "devDependencies": {
-    "vitest": "^3.2.1",
-    "happy-dom": "^17.4.4"
+    "vitest": "3.2.4",
+    "happy-dom": "17.6.3"
   }
 }
